@@ -1,0 +1,57 @@
+847619	01/18/2024	Yes	Cecily Hazelrigg, Michael Diaz, David Mann	Amazon.Com Services LLC, App v. Wa State Dept. of L&I, & Leslie Tullis, Resps
+850962	05/31/2024	Yes	Stephen Dwyer, Leonard Feldman, Lori Smith	Robert Michael Ey, et ano, Respondents v. Tagrisk, LLC, Appellant
+852680	07/12/2024	Yes	Leonard Feldman, Michael Diaz, Linda Coburn	In re the Marriage of Jennifer Schorsch, Respondent and Keith Schorsch, Appellant
+866290	09/11/2024	Yes	Cecily Hazelrigg, Michael Diaz, David Mann	State of Washington, Respondent v. Danny Henry Coleman, Jr, Appellant
+855743	10/31/2024	Yes	Janet Chung, Leonard Feldman, Lori Smith	In re the Matter of The John E. Thompson and Darleen P. Thompson Living Trust
+860321	11/01/2024	Yes	David Mann, Michael Diaz, Bill Bowman	Fall City Sustainable Growth, Appellant v. King County, et al., Respondents
+855930	11/01/2024	Yes	David Mann, Michael Diaz, Bill Bowman	Personal Restraint Petition of John H. Schoenhals
+866117	11/05/2024	Yes	Linda Coburn, Janet Chung, Cecily Hazelrigg	Braeden Simon, Respondent v. Kelly Holguin, Appellant
+868471	11/13/2024	Yes	Cecily Hazelrigg, Lori Smith, David Mann	State of Washington, Respondent v. Yoon Myong Bang, Appellant
+848607	01/08/2025	Yes	Cecily Hazelrigg, Lori Smith, David Mann	Personal Restraint Petition of Tedgy Carnell Wright
+853872	01/08/2025	Yes	Cecily Hazelrigg, Lori Smith, David Mann	State of Washington, Respondent v. Patrick Leon Nicholas, Appellant
+868497	01/08/2025	Yes	Cecily Hazelrigg, Lori Smith, David Mann	State of Washington, Respondent/Cross-App. v. Daniel Joseph Widders, Sr., Appellant/Cross- Resp.
+859391	01/09/2025	Yes	Ian Birk, Michael Diaz, Bill Bowman	Darin and Lisa Chestnut, Respondent/Cr-Appellants v. Andrew Ko, Appellant/Cr-Respondent
+866133	01/09/2025	No	Ian Birk, Michael Diaz, Bill Bowman	State of Washington, Respondent v. Patrick Michael Callahan, Appellant
+855085	01/10/2025	Yes	David Mann, Leonard Feldman, Linda Coburn	Melissa French, Respondent/Cr-Appellant v. Dan Roth, et al., Appellant/Cr-Respondents
+861018	01/10/2025	Yes	David Mann, Leonard Feldman, Linda Coburn	Jason Earl Andrew Ness, et ano., Appellant v. ABB, Inc., et al., Respondents
+855531	01/14/2025	Yes	Bill Bowman, Janet Chung, Lori Smith	State of Washington, Respondent v. Darryl Glen Peterson, Appellant
+858769	01/14/2025	Yes	Bill Bowman, Janet Chung, Lori Smith	Joel Millar v. Anakka Hartwell, et al
+860062	01/15/2025	Yes	Leonard Feldman, Ian Birk, Cecily Hazelrigg	State of Washington, Respondent v. Adam Parker Hinze, Appellant
+857916	01/15/2025	Yes	Leonard Feldman, Ian Birk, Cecily Hazelrigg	State of Washington, Appellant v. Karen K. Peterson, Respondent
+857908	01/15/2025	Yes	Leonard Feldman, Ian Birk, Cecily Hazelrigg	State of Washington, Appellant v. Karen L. Fjerstad, Respondent
+858424	01/15/2025	No	Leonard Feldman, Ian Birk, Cecily Hazelrigg	State of Washington, Respondent v. Rachel Caldwell, Appellant
+857924	01/15/2025	No	Leonard Feldman, Ian Birk, Cecily Hazelrigg	State of Washington, Appellant v. Alta C. Hunter, Respondent
+870726	01/16/2025	Yes	Lori Smith, Michael Diaz, Linda Coburn	Michael Mariani, et al., Appellants v. State of WA, Dept. of Financial Institutions, Respondent
+863037	01/16/2025	Yes	Lori Smith, Michael Diaz, Linda Coburn	JDH Investment Group v. Elliott Bay Asset Solutions
+858742	01/17/2025	Yes	Janet Chung, Ian Birk, David Mann	State of Washington, Respondent v. Yusuf Mohammed Abdullahi, Appellant
+851349	01/22/2025	Yes	Linda Coburn, Bill Bowman, Cecily Hazelrigg	State of Washington, Respondent v. Jermaine Rodregus Freeman, Appellant
+864513	01/22/2025	Yes	Linda Coburn, Bill Bowman, Cecily Hazelrigg	Alfonso Tavaglione, Appellant v. Dehkhoda & Qadri, DBA, Et Ano, Respondent
+862286	01/23/2025	Yes	Michael Diaz, Leonard Feldman, Janet Chung	Sound Action, Appellant v. Wa State Shorelines Hearing Board, et al., Respondents
+862006	01/23/2025	Yes	Michael Diaz, Leonard Feldman, Janet Chung	Brad Whaley, et al, v. Alpine Fire & Safety Systems, Inc, et al
+851489	02/26/2025	Yes	Janet Chung, Linda Coburn, David Mann	Debra Stevens, Appellant/Cr-Respondent v. Craig Jonov, M.D., et al., Respondent/Cr-Appellants
+862685	02/26/2025	Yes	Janet Chung, Linda Coburn, David Mann	Charles Oliver, et al., Appellants v. Henry Garrett, et al., Respondents
+867636	02/26/2025	Yes	Janet Chung, Linda Coburn, David Mann	Centurylink Comm. LLC, Appellant v. Wa Utilities & Transportation Commission, Respondent
+856995	02/27/2025	Yes	Leonard Feldman, Bill Bowman, Cecily Hazelrigg	State of Washington, Respondent v. Scott E. Springstun, Appellant
+850717	02/27/2025	Yes	Leonard Feldman, Bill Bowman, Cecily Hazelrigg	State of Washington, Respondent v. Edwin Vladimir Lopez, Appellant
+864017	02/27/2025	Yes	Leonard Feldman, Bill Bowman, Cecily Hazelrigg	In re the Detention of E.S.
+864386	02/28/2025	Yes	Lori Smith, Michael Diaz, Linda Coburn	State of Washington, Respondent v. C.J.C., Appellant
+865366	02/28/2025	Yes	Lori Smith, Michael Diaz, Linda Coburn	Callum Herdson, Respondent v. Richard Fortin et al, Appellants
+864611	02/28/2025	Yes	Lori Smith, Michael Diaz, Linda Coburn	Carly Baker, Et Al, Appellant v. Seattle Childrens Hospital, Respondent
+853996	03/04/2025	Yes	Ian Birk, Bill Bowman, David Mann	Thida Chea, Appellant v. Sophal Long, Respondent
+854615	03/04/2025	Yes	Ian Birk, Bill Bowman, David Mann	State of Washington v. Ronnie Lynn Ater Jr.
+858530	03/04/2025	Yes	Ian Birk, Bill Bowman, David Mann	Milagros Moniz, Res. v. King County Public Hospital District No. 1, et. al., Pets.
+858513	03/04/2025	Yes	Ian Birk, Bill Bowman, David Mann	Nasra Elmi and Robert Blanton, Res. v. Aesthetic Rejuvenation Spa, PLLC, et al., Apps.
+856588	03/05/2025	Yes	Michael Diaz, Janet Chung, Cecily Hazelrigg	State of Washington, Respondent v. Richard N. Phillips, Appellant
+871692	03/05/2025	Yes	Michael Diaz, Janet Chung, Cecily Hazelrigg	John Kindt et ano, Apps. v. Greg Cunningham et ano, Res.
+866354	03/05/2025	Yes	Michael Diaz, Janet Chung, Cecily Hazelrigg	In re Terri Beede, App. v. Nicholas Aldrich, Sr., et al., Res.**ESTATE OF MICHAEL E. WALTERS
+870734	03/06/2025	Yes	Linda Coburn, Leonard Feldman, Ian Birk	Personal Restraint Petition of: Alfredo Carreno-Maldonado
+861514	03/06/2025	Yes	Linda Coburn, Leonard Feldman, Ian Birk	Arthur Skinner, Res/Cross-App v. Incity Properties Holdings Inc et al., App/Cross-Res
+869892	03/06/2025	Yes	Linda Coburn, Leonard Feldman, Ian Birk	The Estate of Fay M. Ainsworth, App v. Dept. of Revenue, Res
+868381	03/06/2025	No	Linda Coburn, Leonard Feldman, Ian Birk	Marci Peterhans, Appellant v. University of Washington, Et Ano Respondents
+850865	03/07/2025	Yes	Bill Bowman, Janet Chung, Lori Smith	State of Washington, Respondent v. Bryce Hardy, Appellant
+862405	03/07/2025	Yes	Bill Bowman, Janet Chung, Lori Smith	B&B Welding, Inc., Appellant v. Scarsella Bros., Inc., et al, Respondents
+860739	03/07/2025	Yes	Bill Bowman, Janet Chung, Lori Smith	Janice Hodge, Appellant, v. Michael Hodge, Respondent
+865056	03/07/2025	Yes	Bill Bowman, Janet Chung, Lori Smith	Northstar Case Management obo Raymond Bell, Appellant v. State of WA DSHS et al, Respondents
+851993	03/11/2025	Yes	David Mann, Leonard Feldman, Michael Diaz	State of Washington, Respondent v. Michael Lee Dudley, Appellant
+870661	03/11/2025	Yes	David Mann, Leonard Feldman, Michael Diaz	Personal Restraint Petition of Navin A Milko
+862910	03/11/2025	Yes	David Mann, Leonard Feldman, Michael Diaz	Moore Trust, et al., Apps. v. Glenn Wiley Grubbs III and Tamara McMillan, Res.

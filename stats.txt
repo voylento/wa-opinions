@@ -1,0 +1,17 @@
+Total Opinions: 646
+Total Published Opinions: 78
+Total Published Opinions with oral argument: 66
+Total Published Opinions w/o oral argument: 12
+Max Days for Published Opinion: 319
+Avg Days for Published Opinions: 81.6
+Avg Days for Published Opinions Excluding Highest: 78.5
+Total Unpublished Opinions: 567
+Total Unpublished Opinions with oral argument: 211
+Total Unpublished Opinions w/o oral arguemnt: 356
+Max Days for Unpublished Opinion: 341
+Avg Days for Unpublished Opinion w/oral argument: 83.7
+Avg Days for Unpublished Opinion w/o oral argument: 12.9
+Avg Days for Unpub Opinion w/ oral arugment excluding highest: 82.5
+Top 10 waits for published opinion: [319, 195, 194, 188, 185, 180, 160, 146, 139, 139]
+Top 10 waits for unpublished opinion: [341, 312, 206, 195, 194, 194, 187, 185, 181, 179]
+Top 10 waits for unpublished opinion w/o oral argument: [136, 111, 108, 103, 90, 75, 62, 61, 46, 42]

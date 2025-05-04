@@ -1,0 +1,125 @@
+#!/usr/bin/env python3
+import sys
+import csv
+from dat import settledcases
+
+# Function to read and parse a tab-delimited file
+def read_tab_delimited_file(file_path):
+    data = []
+    with open(file_path, 'r', newline='', encoding='utf-8') as file:
+        reader = csv.reader(file, delimiter='\t')
+        for row in reader:
+            data.append(row)
+    return data
+
+# Function to calculate the number of days between two dates
+def main():
+    if len(sys.argv) != 2:
+        print("Usage: get_stats cases_decided.txt")
+        sys.exit(1)
+
+    cases_decided_file = sys.argv[1]
+
+    cases_decided = read_tab_delimited_file(cases_decided_file)
+
+    total_opinions = len(cases_decided)
+    days_pub = []
+    days_unpub = []
+    days_unpub_nonoral = []
+    total_pub = 0
+    total_unpub = 0
+    total_pub_oral = 0
+    total_pub_nonoral = 0
+    total_unpub_oral = 0
+    total_unpub_nonoral = 0
+    total_days_pub = 0
+    total_days_pub_oral = 0
+    total_days_pub_nonoral = 0
+    total_days_unpub = 0
+    total_days_unpub_oral = 0
+    total_days_unpub_nonoral = 0
+    highest_days_pub = 0
+    highest_days_unpub = 0
+    highest_days_unpub_had_oral = False
+
+    for case in cases_decided:
+        if case[0] in settledcases.settled_cases:
+            continue
+        opinion_type = case[4]
+        had_oral_argument = case[3]
+        number_days = int(case[5])
+        
+        if opinion_type == "PUB" or opinion_type == "PIP":
+            total_pub += 1
+            total_days_pub += number_days
+
+            if had_oral_argument == "Yes":
+                total_pub_oral += 1
+                total_days_pub_oral += number_days
+            else:
+                total_pub_nonoral += 1
+                total_days_pub_nonoral += number_days
+
+            if number_days > highest_days_pub:
+                next_highest_days_pub = highest_days_pub
+                highest_days_pub = number_days
+
+            days_pub.append(number_days)
+
+        elif opinion_type == "UPUB":
+            total_unpub += 1
+            total_days_unpub += number_days
+
+            if had_oral_argument == "Yes":
+                total_unpub_oral += 1
+                total_days_unpub_oral += number_days
+            else:
+                total_unpub_nonoral += 1
+                total_days_unpub_nonoral += number_days
+                days_unpub_nonoral.append(number_days)
+
+            if number_days > highest_days_unpub:
+                next_highest_days_unpub = highest_days_unpub
+                highest_days_unpub = number_days
+                if had_oral_argument:
+                    highest_days_unpub_had_oral = True
+                else:
+                    highest_days_unpub_had_oral = False
+
+            days_unpub.append(number_days)
+
+    print(f"Total Opinions: {total_opinions}")
+    print(f"Total Published Opinions: {total_pub}")
+    print(f"Total Published Opinions with oral argument: {total_pub_oral}")
+    print(f"Total Published Opinions w/o oral argument: {total_pub_nonoral}")
+    print(f"Max Days for Published Opinion: {highest_days_pub}")
+    print(f"Avg Days for Published Opinions: {round((total_days_pub / total_pub),1)}")
+    print(f"Avg Days for Published Opinions Excluding Highest: {round(((total_days_pub - highest_days_pub) / (total_pub - 1)),1)}")
+    print(f"Total Unpublished Opinions: {total_unpub}")
+    print(f"Total Unpublished Opinions with oral argument: {total_unpub_oral}")
+    print(f"Total Unpublished Opinions w/o oral arguemnt: {total_unpub_nonoral}")
+    print(f"Max Days for Unpublished Opinion: {highest_days_unpub}")
+    print(f"Avg Days for Unpublished Opinion w/oral argument: {round((total_days_unpub_oral / total_unpub_oral),1)}")
+    print(f"Avg Days for Unpublished Opinion w/o oral argument: {round((total_days_unpub_nonoral / total_unpub_nonoral),1)}")
+    if highest_days_unpub_had_oral == True:
+        print(f"Avg Days for Unpub Opinion w/ oral arugment excluding highest: {round(((total_days_unpub_oral - highest_days_unpub) / (total_unpub_oral - 1)),1)}")
+    else: 
+        print(f"Avg Days for Unpub Opinion w/o oral arugment excluding highest: {round(((total_days_unpub_nonoral - highest_days_unpub) / (total_unpub_nonoral - 1)),1)}")
+
+    days_pub.sort()
+    days_pub.reverse()
+    top_ten = days_pub[0:10]
+    print(f"Top 10 waits for published opinion: {top_ten}")
+    days_unpub.sort()
+    days_unpub.reverse()
+    top_ten = days_unpub[0:10]
+    print(f"Top 10 waits for unpublished opinion: {top_ten}")
+    days_unpub_nonoral.sort()
+    days_unpub_nonoral.reverse()
+    top_ten = days_unpub_nonoral[0:10]
+    print(f"Top 10 waits for unpublished opinion w/o oral argument: {top_ten}")
+    
+
+if __name__ == "__main__":
+    main()
+                                                 

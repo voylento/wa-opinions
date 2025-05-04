@@ -1,0 +1,646 @@
+863711	01/10/2025	04/28/2025	Yes	UPUB	108	State Of Washington V. Steven Champeau
+863258	01/15/2025	04/28/2025	Yes	PUB	103	Meghan Mcsorley, Respondent, V. The Everett Clinic, Et Al., Petitioners
+861115	02/28/2025	04/28/2025	Yes	PUB	59	State Of Washington, Petitioner V. Deborah Peoples, Respondent
+863321	03/04/2025	04/28/2025	Yes	UPUB	55	Pacific Pile & Marine, L.p., Respondent V. Graham Contracting, Ltd. Et Al., Appellants
+872087	03/11/2025	04/21/2025	No	PUB	41	Arthur West V. Walla Walla City Council, Et Al
+855638	11/01/2024	04/14/2025	Yes	UPUB	164	Patricia K. Smith-wade, App V. Gly Construction, Inc., Et Ano., Resps
+859455	01/23/2025	04/14/2025	Yes	UPUB	81	John L. Douglas, Jr., Appellant V. Dept Of Labor And Industries, Respondent
+853368	03/11/2025	04/14/2025	Yes	UPUB	34	State Of Washington, Respondent V. Aeurlious E. Drayton, Appellant
+830309	10/31/2024	04/07/2025	Yes	UPUB	158	In Re Aaron Ross Freudenburg, Respondent And Mikela Forshe Freudenburg, Appellant
+860992	01/16/2025	04/07/2025	Yes	UPUB	81	In Re The Detention Of D.O.
+861158	09/18/2024	03/31/2025	Yes	PUB	194	Tulalip Tribes Of Washington Et Ano, Appellants V. Lexington Insurance Company Et Al, Respondents
+849891	01/08/2025	03/31/2025	Yes	UPUB	82	State Of Washington, Respondent V. John H. Scannell, Appellant
+865129	01/22/2025	03/31/2025	Yes	UPUB	68	Li David Yi, Appellant V. The Xcj Llc Et Al, Respondents
+867784	02/28/2025	03/31/2025	Yes	UPUB	31	Jacquelyn Flaherty, Appellant V. Seattle Public School District, Et Al, Respondent
+868420	11/08/2024	03/26/2025	No	UPUB	138	State Of Washington, Respondent V. Jessica Marie Mullins, Appellant
+866150	09/17/2024	03/24/2025	Yes	PUB	188	Leah Campanelli Et Al., Appellants V. Peacehealth Southwest Medical Center, Et Al., Respondents
+843290	09/18/2024	03/24/2025	Yes	UPUB	187	State Of Washington, Respondent V. Ebrima Jobe, Appellant
+835165	09/20/2024	03/24/2025	Yes	UPUB	185	State Of Washington, Respondent V. Jason Dominguez, Appellant
+857746	11/05/2024	03/24/2025	Yes	UPUB	139	Robert Dean Linden, Appellant V. Jolinda Marie Mcgarvey, Respondent
+868462	01/22/2025	03/24/2025	Yes	PIP	61	Samantha Gerlach, Et Al., Appellants V. Bainbridge Island School District, Et Al., Respondents
+870831	01/22/2025	03/24/2025	No	UPUB	61	Samantha Gerlach, Et Al., Appellants V. Bainbridge Island School District #303, Et Al., Respondents
+870840	02/26/2025	03/24/2025	No	UPUB	26	Marcus Gerlach, Et Al., Appellants V. City Of Bainbridge Island, Et Al., Respondents
+872168	02/26/2025	03/24/2025	No	UPUB	26	Blake Daniel Larson V. Kluane Ann Bohn
+858831	02/27/2025	03/24/2025	Yes	UPUB	25	Mari Kusada, Et Al., Appellants V. Jialin Niu, Et Al., Respondents
+855425	03/06/2025	03/24/2025	No	UPUB	18	State Of Washington, Respondent V. Ernesto Sosa, Appellant
+859501	03/11/2025	03/24/2025	No	UPUB	13	Jody K. Jaycox, Respondent, V. Thomas D. Jaycox, Appellant.
+848879	09/13/2024	03/17/2025	Yes	PUB	185	State Of Washington, Respondent V. Bernard Bellerouche, Appellant
+850555	10/29/2024	03/17/2025	Yes	PUB	139	State Of Washington, Respondent V. Christopher Ellis Hamilton, Appellant
+859595	11/06/2024	03/17/2025	Yes	UPUB	131	In The Matter Of The Parental Rights To S.a.m-s.
+864491	01/17/2025	03/17/2025	Yes	UPUB	59	Randy Libri, Respondent V. First National Insurance Company Of America, Appellant
+864220	01/22/2025	03/17/2025	Yes	PUB	54	Kester Phillips, Respondent V. Swedish Health Services, Appellant
+872141	02/28/2025	03/17/2025	No	UPUB	17	State Of Washington V. Brandon Odah Osborn
+862588	03/06/2025	03/17/2025	No	UPUB	11	Zachary Gibson, Respondent V. Holly Lyon, Appellant
+856898	03/07/2025	03/17/2025	No	UPUB	10	State Of Washington, Respondent V. Norrian B. Phillips, Appellant
+860330	03/07/2025	03/17/2025	No	UPUB	10	In Re The Marriage Of: Laurie Reynolds Winters, Appellant V. Robert Bradley Winters, Respondent
+858751	03/07/2025	03/17/2025	No	UPUB	10	State Of Washington, Respondent V. Qahir Rasheam Baker, Appellant
+857291	03/07/2025	03/17/2025	No	UPUB	10	Regence Blueshield, Respondent V. Stephen D. Speidel N.d., P.c., Et Ano., Appellant
+859463	03/11/2025	03/17/2025	No	UPUB	6	Natassha Chavis, Et Al V. City Of Des Moines, Et Al
+858785	03/11/2025	03/17/2025	No	UPUB	6	State Of Washington, Respondent V. Lonnie Burton Nka Thomas Allen Zyxx, Petitioner
+857754	09/10/2024	03/10/2025	Yes	UPUB	181	Rhonda & Brett Peck, Respondents V. Encompass Insurance Co, Appellant
+853147	09/12/2024	03/10/2025	Yes	UPUB	179	State Of Washington, Respondent V. Stonney Marcus Rivers, Appellant
+846167	11/01/2024	03/10/2025	Yes	UPUB	129	Personal Restraint Petition Of Keith Whitehawk
+853147	11/08/2024	03/10/2025	Yes	UPUB	122	State Of Washington, Respondent V. Stonney Marcus Rivers, Appellant
+866222	01/09/2025	03/10/2025	Yes	UPUB	60	Growth Management Hearings Board, Et Al., Respondents V. Clark County, Et Al, Appellants
+868772	02/27/2025	03/10/2025	No	UPUB	11	Adnan Khaki, Appellant V. Jennifer Reedal, Respondent.
+872150	02/28/2025	03/10/2025	No	UPUB	10	Paul M. Benton, Et Al V. William E. Peterson
+872095	02/28/2025	03/10/2025	No	UPUB	10	State Of Washington V. Stephen Vincent Vasquez, Jr.
+870858	02/28/2025	03/10/2025	No	UPUB	10	State Of Washington, Respondent V. Keith Rayshawn Gomez, Appellant
+863509	03/04/2025	03/10/2025	No	UPUB	6	Sharon Ronsse, Respondent V. Michael Ray Price Et Al., Appellants
+872117	03/04/2025	03/10/2025	No	UPUB	6	State Of Washington V. Isaiah Aleksandr Lacson
+855221	03/04/2025	03/10/2025	No	UPUB	6	Tayme Rose-leavitt, Respondent V. Rand Workman, Appellant
+872109	03/04/2025	03/10/2025	No	UPUB	6	State Of Washington V. Robert Todd Thysell, Sr.
+855573	03/05/2025	03/10/2025	No	UPUB	5	Personal Restraint Petition Of Jamall Shonree Baker
+876791	03/05/2025	03/10/2025	No	UPUB	5	Adrian Teytud Contreras, Respondent V Phuong Nguyen Hoai Dang, Appellant
+864726	03/05/2025	03/10/2025	No	UPUB	5	Beth Gonzales, Respondent V. Anthony Scott Camp, Appellant
+872052	03/05/2025	03/10/2025	No	UPUB	5	State Of Washington V. Alexander Richard Yell
+872044	03/05/2025	03/10/2025	No	UPUB	5	State Of Washington V. Daniel Joseph Jones
+865021	03/05/2025	03/10/2025	No	UPUB	5	Lara Brooke Seefeldt, Respondent V. Albert Whitney Coburn, Appellant
+861204	03/06/2025	03/10/2025	No	UPUB	4	In The Matter Of: Michael Schermerhorn And Roxanna Larson
+868659	11/06/2024	03/03/2025	Yes	UPUB	117	Jean Hagel, Et Al, Respondents V Duke N. Bui, Et Al, Appellants
+847171	01/09/2025	03/03/2025	Yes	UPUB	53	State Of Washington, Respondent V. Ghassan A. Shakir, Appellant
+841092	02/26/2025	03/03/2025	No	UPUB	5	State Of Washington, Respondent V. Christopher Hutton, Appellant
+854135	02/26/2025	03/03/2025	No	UPUB	5	Personal Restraint Petition Of Clayton Evan Cummings
+858378	02/26/2025	03/03/2025	No	UPUB	5	Legacy Construction Group, Llc, Res. V. Nevin And Yavuz Draman, Et Al., Apps.
+872079	02/27/2025	03/03/2025	No	UPUB	4	State Of Washington V. David J. Bassford
+872028	02/27/2025	03/03/2025	No	UPUB	4	State Of Washington V. Jd Miller
+872133	02/27/2025	03/03/2025	No	UPUB	4	Pamela Lutz V. Grange Insurance Association, Et Al
+856731	01/14/2025	02/24/2025	Yes	UPUB	41	State Of Washington, Respondent V. Emmanuel Grandemartinez, Appellant
+870751	01/14/2025	02/24/2025	No	UPUB	41	Garry Shuler And Barbara Panush, Appellants V. Timothy L. Bennecker And Edith T. Kroha, Respondents
+862812	01/23/2025	02/24/2025	Yes	UPUB	32	Madero Construction, Llc, Respondent V. Fullwiler Construction, Inc. Et Al, Appellants
+850300	09/25/2024	02/18/2025	Yes	PUB	146	State Of Washington, Respondent V. Gildardo Bravo, Appellant
+868403	11/06/2024	02/18/2025	Yes	UPUB	104	State Of Washington, Respondent V. Aiden Fetters, Appellant
+850083	11/06/2024	02/18/2025	Yes	UPUB	104	State Of Washington, Respondent V. Melvin Lewis Taylor, Jr., Appellant
+853937	11/07/2024	02/18/2025	Yes	UPUB	103	State Of Washington, Respondent V. Randolph Thomas Mcintyre, Appellant
+868438	11/08/2024	02/18/2025	Yes	UPUB	102	State Of Washington, Respondent V. Kristopher Martin Korsakas, Appellant
+842145	11/08/2024	02/18/2025	Yes	UPUB	102	In Re The Detention Of Shawn Skelton
+852469	11/14/2024	02/18/2025	Yes	UPUB	96	State Of Washington, Respondent V. Richard James Rotter, Appellant
+862855	11/14/2024	02/18/2025	Yes	UPUB	96	Shadow Creek Investments, Et Al, Appellant V. City Of Anacortes, Respondent
+844016	01/08/2025	02/18/2025	Yes	UPUB	41	Sandeep Arugonda, Resp/x-app. V. Keerthi Ananthula, App/x-resp.
+868624	01/08/2025	02/18/2025	Yes	UPUB	41	Akberet Tekle, Appellant V. Washington Department Of Social And Health Services, Respondent
+859315	01/15/2025	02/18/2025	Yes	UPUB	34	In Re The Estate Of Darrel R. Bryant
+850849	07/19/2024	02/10/2025	Yes	UPUB	206	State Of Washington, Respondent V. Brandon Kenneth White, Appellant
+860771	09/25/2024	02/10/2025	Yes	UPUB	138	Nancy James, Et Ano. V. State Of Washington, Et Ano., Respondents
+855891	11/06/2024	02/10/2025	Yes	UPUB	96	Timothy Lundquist, Appellant V. Seattle School District 1, Et Ano., Respondent
+857886	11/08/2024	02/10/2025	Yes	UPUB	94	State Of Washington, Respondent V. Jaxson Adams, Appellant
+856278	01/10/2025	02/10/2025	Yes	UPUB	31	State Of Washington, Respondent V. Darius Villa, Appellant
+863169	01/17/2025	02/10/2025	No	UPUB	24	Chelsi A. Eastwood Cooley, Appellant V. Donald Michael Hall, Respondent
+849701	09/17/2024	02/03/2025	Yes	UPUB	139	State Of Washington, Respondent V. Naomi Marie Elaster, Appellant
+848704	09/17/2024	02/03/2025	Yes	PIP	139	* State Of Washington, Respondent V. Billy Clyde Miller, Appellant
+845527	09/24/2024	02/03/2025	Yes	UPUB	132	Personal Restraint Petition Of Alejandro Pena Salvador
+821253	11/13/2024	02/03/2025	Yes	UPUB	82	State Of Washington, Respondent V. John Ray Stearns, Appellant
+861131	01/10/2025	02/03/2025	Yes	UPUB	24	Vision Landscapes, Llc, Appellant V. Ron E. Amundson Et Al, Respondents
+849875	01/14/2025	02/03/2025	No	UPUB	20	Personal Restraint Petition Of Jeffry Dale Davis
+859561	01/23/2025	02/03/2025	No	UPUB	11	State Of Washington, Appellant V. Wayne David Anderson, Respondent
+870696	01/23/2025	02/03/2025	No	UPUB	11	Estate Of Bruce Coleman, Appellant V. American Commerce Insurance, Respondent
+870670	01/23/2025	02/03/2025	No	UPUB	11	State Of Washington, Respondent V. Derek Steven Lebeda, Appellant
+860801	01/23/2025	02/03/2025	No	UPUB	11	Brialle Engelhart, Respondent V. Wren Hansen, Appellant
+847953	07/17/2024	01/27/2025	Yes	UPUB	194	Anna K. Andrews, Et Ano V. Freeway Motors Inc., Et Al
+860852	09/13/2024	01/27/2025	No	UPUB	136	Jada Price & Asa Harris, Appellants V. State Of Washington, Respondent
+868411	11/05/2024	01/27/2025	Yes	UPUB	83	State Of Washington, Respondent V. Michael S. Adams, Appellant
+856201	01/16/2025	01/27/2025	No	UPUB	11	State Of Washington, Respondent V. Dylan T. Heins, Appellant
+870653	01/16/2025	01/27/2025	No	UPUB	11	State Of Washington, Respondent V Raymond Jay Femling, Appellant
+857274	01/16/2025	01/27/2025	No	UPUB	11	Toni Marie Steendahl, Respondent V. Marcus George Steendahl, Appellant
+858165	01/16/2025	01/27/2025	No	UPUB	11	Dependency Of H.a.w.
+863100	01/16/2025	01/27/2025	No	UPUB	11	State Of Washington, Respondent V. Joel White, Appellant
+852779	01/17/2025	01/27/2025	No	UPUB	10	State Of Washington, Respondent V. Brandon Combs, Appellant
+859579	01/17/2025	01/27/2025	No	UPUB	10	State Of Washington, Respondent V. Bridgette Jackson, Appellant
+860712	01/17/2025	01/27/2025	No	UPUB	10	Mark Dipaolo, Et Ano, Appellants V. Fairmont Olympic Hotel, Et Ano, Respondents
+870742	01/17/2025	01/27/2025	No	UPUB	10	Lyubov Andryushina, Appellant V. Dept. Of L & I, State Of Wa, Respondent
+862936	01/17/2025	01/27/2025	No	UPUB	10	Shannon Henery, Appellant V. Walker Hagius, Respondent
+861280	01/17/2025	01/27/2025	No	UPUB	10	State Of Washington, Respondent V. Michael David Murray, Appellant
+859439	01/22/2025	01/27/2025	No	UPUB	5	State Of Washington, Respondent V. James Robert Spitzer, Appellant
+857479	01/22/2025	01/27/2025	No	UPUB	5	In Re The Parentage Of Rob Jacobs, Respondent V. Gale E. Mcarthur, Appellant
+857240	01/22/2025	01/27/2025	No	UPUB	5	Villa Marina Assoc. Of Apt. Owners, Respondent V. John E. Collins, Jr. Appellant
+854682	01/22/2025	01/27/2025	No	UPUB	5	Personal Restraint Petition Of Joseph Njuguna Njonge
+870815	01/23/2025	01/27/2025	No	UPUB	4	State Of Washington, Respondent V. Able Merino Tapia, Appellant
+846574	11/01/2024	01/21/2025	Yes	PUB	81	* Austin Cornelius, Appellant V. Washington State University, Et Al, Respondents
+864246	11/14/2024	01/21/2025	No	PUB	68	* Quality Loan Service Corp. Respondent V. Ngoc Van Hoang Nguyen, Appellant
+870807	01/08/2025	01/21/2025	No	UPUB	13	State Of Washington, Respondent V. Bryan Jack Crow, Appellant
+853538	01/08/2025	01/21/2025	No	UPUB	13	Karen Konz, Appellant V. Colin Hofmann, Respondent
+863827	01/08/2025	01/21/2025	No	UPUB	13	John Loop, Appellant, V. Lisa Loop, Respondent
+870700	01/09/2025	01/21/2025	No	UPUB	12	State Of Washington, Respondent V. Joshua David Michael, Appellant
+870637	01/09/2025	01/21/2025	No	UPUB	12	Scott L. Stoller, Appellant V. Dept. Of Corrections, State Of Wa, Et Ano., Respondents
+848399	01/09/2025	01/21/2025	No	UPUB	12	In Re The Marriage Of Daphne Sumpter, Respondent And John Gavin Sumpter, Appellant
+870777	01/10/2025	01/21/2025	No	UPUB	11	Julie Livingston, Et Al., Appellants V. Randy Hanson, Et Ux, Et Al., Respondents
+863614	01/10/2025	01/21/2025	No	UPUB	11	Loanita Adams, Appellant V. Nasro Ugas, Respondent
+864661	01/10/2025	01/21/2025	No	UPUB	11	Kurt Benshoof, Appellant V. Nathan Cliber, Et Al., Respondents
+865943	01/10/2025	01/21/2025	No	UPUB	11	Apollonia & William Kwan Et Al, Resps V. Alan B.& Lynne Clark Et Al, Apps
+856481	01/14/2025	01/21/2025	No	UPUB	7	State Of Washington, Respondent V. William Weeden, Appellant
+870688	01/14/2025	01/21/2025	No	UPUB	7	State Of Washington, Respondent V. D.d.h., Appellant
+870823	01/14/2025	01/21/2025	No	UPUB	7	State Of Washington, Respondent V. Paul J. Bieker, Appellant
+870785	01/14/2025	01/21/2025	No	UPUB	7	State Of Washington, Respondent V Jeffery A. Roberts, Appellant
+864246	01/14/2025	01/21/2025	No	PUB	7	* Quality Loan Service Corp. Respondent V. Ngoc Van Hoang Nguyen, Appellant
+862201	01/15/2025	01/21/2025	No	UPUB	6	James M. Bentley, Appellant V. Seattle Wealth Management, Llc, Et Al, Respondent
+860941	01/15/2025	01/21/2025	No	UPUB	6	In The Matter Of The Parental Rights To B.g.b. & Nsb
+870718	01/15/2025	01/21/2025	No	UPUB	6	State Of Washington, Respondent V. Mathew D. Tran, Appellant
+866176	09/12/2024	01/13/2025	Yes	PUB	123	* State Of Washington, Respondent V. Jerry Lee Brock, Appellant
+847457	09/24/2024	01/13/2025	Yes	UPUB	111	State Of Washington, Respondent V. Elle Barksdale Loe, Appellant
+868721	11/07/2024	01/13/2025	Yes	UPUB	67	The Geraldine A. Maniatis Living Trust, Resp V. Malkit Singh, Et Al, App
+863347	11/08/2024	01/13/2025	Yes	UPUB	66	C&c Communication, Llc, Appellant V. T-mobile Usa, Inc. D/b/a T-mobile, Et Ano., Respondents
+854372	01/08/2025	01/13/2025	No	UPUB	5	State Of Washington, Respondent V. Debra Jean Keskey, Appellant
+854542	01/08/2025	01/13/2025	No	UPUB	5	Deutsche Bank National Trust Company, Et Al., Res. V. Christopher E. Larson, Et Al., Apps.
+848984	01/09/2025	01/13/2025	No	UPUB	4	State Of Washington, Respondent V. Eson Puleuea Herr, Appellant
+865889	01/09/2025	01/13/2025	No	UPUB	4	Michael Lyons And Vanessa Lyons, Respondents V. Chang Liu, Appellant
+853007	02/29/2024	01/06/2025	Yes	UPUB	312	Alea C. Whorton, Respondent V. Fran Rest, Llc Dba Subway, Appellant
+847546	10/29/2024	01/06/2025	Yes	UPUB	69	Alexander Hoag, Appellant V. Carol Ann Hoag (aka Slater), Respondent
+858416	10/30/2024	01/06/2025	Yes	UPUB	68	State Of Washington, Respondent/cr-appellant V. Jordan Michael Stengrund, Appellant/cr-respondent
+868535	10/31/2024	01/06/2025	Yes	UPUB	67	State Of Washington, Respondent V. Justin James Daniels, Appellant
+864980	11/13/2024	01/06/2025	Yes	UPUB	54	Washington Coho, Llc, Appellant V. Whatcom County, Respondent
+845993	01/24/2024	12/30/2024	Yes	UPUB	341	State Of Washington, Resp/cross-app V. Cole Edward Krause, App/cross-resp
+841041	09/10/2024	12/30/2024	No	UPUB	111	Merchants Credit Corporation, Appellant V. Litigation Practice Group P.c., Respondents
+849964	09/12/2024	12/30/2024	Yes	UPUB	109	State Of Washington, Respondent V. Scott Gregory Davis, Appellant
+855191	09/13/2024	12/30/2024	Yes	UPUB	108	Bih-ling Chang, Et Ano V. Peng Xie, Et Ano
+861140	09/18/2024	12/30/2024	Yes	UPUB	103	Weyerhaeuser Nr Co. V. Wa State Dept Of Ecology & Pollution Control Hearings Board
+844491	09/20/2024	12/30/2024	Yes	UPUB	101	In Re The Marriage Of Jennifer M. Hillegas, Appellant V. David M. Hillegas, Respondent
+868632	10/29/2024	12/30/2024	Yes	PUB	62	* State Of Washington, Respondent V. Eric Emil Leer, Appellant
+849395	11/05/2024	12/30/2024	Yes	UPUB	55	State Of Washington, Respondent V. Jonnathan Ray Hoskins, Appellant
+840754	11/07/2024	12/30/2024	Yes	UPUB	53	State Of Washington, Respondent V. Tiana Rose Wood-sims, Appellant
+857452	11/14/2024	12/30/2024	Yes	PUB	46	* Laura Stocker, Respondent V. University Of Washington, Appellant
+852523	09/11/2024	12/23/2024	No	UPUB	103	State Of Washington, Respondent V. Leon Caril, Ii, Appellant
+856251	09/20/2024	12/23/2024	Yes	UPUB	94	In The Matter Of The Parental Rights To H.s.w.
+853112	09/24/2024	12/23/2024	Yes	UPUB	90	Frank Condel, Respondent V. Amina Condel, Appellant
+851969	09/25/2024	12/23/2024	Yes	UPUB	89	State Of Washington, Respondent V. Sidney Guy Smith, Appellant
+868641	10/30/2024	12/23/2024	Yes	UPUB	54	Grayson Morgan, Appellant V. Joel Sacks, Respondent
+854577	10/30/2024	12/23/2024	Yes	UPUB	54	In The Matter Of The Parental Rights To P.l.c.s.
+859421	10/31/2024	12/23/2024	Yes	UPUB	53	Us Bank National Assn, Respondent V. David Vournas, Appellant
+858441	11/05/2024	12/23/2024	Yes	UPUB	48	Stephenie Lock V. American Family Insurance Company
+852892	11/05/2024	12/23/2024	Yes	UPUB	48	State Of Washington, Respondent V. Polevia Junior Valoaga, Appellant
+866087	09/10/2024	12/16/2024	Yes	UPUB	97	State Of Washington, Respondent/cross Appellant V Dennis M. Bauer, Appellant/cross Respondent
+851811	09/10/2024	12/16/2024	Yes	UPUB	97	Kathryn Lee Kim, Et Al., Appellants V. Seattle Children Hospital Et Al., Respondents
+856766	09/18/2024	12/16/2024	Yes	UPUB	89	In Re The Matter Of Tony Vivolo Residuary Trust, Steven Vivolo, Appellant
+861956	09/20/2024	12/16/2024	Yes	PUB	87	* Ramiro Valderrama, Appellant V. City Of Sammamish, Respondent
+847139	10/30/2024	12/16/2024	Yes	UPUB	47	State Of Washington, Respondent V. Darrius Galom, Appellant
+855417	06/12/2024	12/09/2024	Yes	PUB	180	* Pipe Fitters Local Union 120 Pension Plan, Respondents V. Scott Mcfarlane, Et Al., Petitioners
+848241	07/09/2024	12/09/2024	Yes	UPUB	153	State Of Washington, Respondent V. John Martinez, Appellant
+855832	09/24/2024	12/09/2024	Yes	UPUB	76	Bobby Kitcheon And Candance Ream, Respondents V. City Of Seattle, Petitioner
+848178	09/24/2024	12/09/2024	Yes	UPUB	76	Interface Technologies Northwest Inc. Et Al V. Schmidt & Schmidt Llp, Et Al
+846612	01/18/2024	12/02/2024	Yes	PUB	319	* State Of Washington, Respondent V. Meta Platforms, Inc., Appellant
+844610	09/11/2024	12/02/2024	Yes	UPUB	82	State Of Washington, Respondent V. Fan Zhang, Appellant
+847961	09/13/2024	12/02/2024	Yes	PIP	80	* State Of Washington, Respondent V. Nigel Sinclair Hogan, Appellant
+857495	09/19/2024	12/02/2024	Yes	UPUB	74	James Cherberg And Nan Cherberg, Appellants V. Fidelity National Title Ins. Company, Respondent
+859617	09/19/2024	12/02/2024	No	PUB	74	* State Of Washington, Respondent V. Jerome Othello Clary Iv, Appellant
+855689	09/25/2024	12/02/2024	Yes	UPUB	68	Michael Vandivere, Et Al. V. C3 Manufacturing, Llc
+861531	10/30/2024	12/02/2024	No	UPUB	33	In Re The Dependency Of K.v.
+860160	10/31/2024	12/02/2024	Yes	PUB	32	* Alterna Aircraft V.b. Limited, Respondent V. Spicejet Limited, Appellant
+862715	11/06/2024	12/02/2024	No	UPUB	26	In Re Emmalee Bonner, Appellant V. Travis Gerrard, Respondent
+868446	11/13/2024	12/02/2024	No	UPUB	19	Nadine Hensler, Et Al., Respondents V. Jerry Twyman, Et Al., Appellant
+849336	07/16/2024	11/25/2024	Yes	PUB	132	* Ruth Scott, Et Al, Respondents V. Amazon.com, Inc., Petitioner
+854747	09/12/2024	11/25/2024	Yes	UPUB	74	Abolfazl Hosseinzadeh, App-cross Respondent V. Swedish Health Services Et Al, Resp-cross App
+861239	09/13/2024	11/25/2024	Yes	PUB	73	* Lucid Group Usa, Appellant V State Licensing, Respondent
+859986	09/19/2024	11/25/2024	Yes	UPUB	67	Amanda Thornewell, Appellant, V. Seattle School District No. 1, Respondent
+858874	09/20/2024	11/25/2024	Yes	UPUB	66	James Prekeges, Appellant, V Lehrer Willis And Bridgette Takeuchi, Respondents
+868578	10/29/2024	11/25/2024	No	UPUB	27	State Of Washington, Respondent V. Jacob Ryan Helms, Appellant
+859587	10/31/2024	11/25/2024	No	UPUB	25	State Of Washington, Respondent V. Constance Laticia Ford, Appellant
+868608	10/31/2024	11/25/2024	No	UPUB	25	State Of Washington, Respondent V. Terry Matthew James Kohl, Appellant
+858394	10/31/2024	11/25/2024	No	UPUB	25	State Of Washington, Respondent V. Rudolph Eric Finne, Appellant
+851748	10/31/2024	11/25/2024	No	UPUB	25	Lori Shavlik, Respondent V. Snohomish County, Petitioner
+859897	11/01/2024	11/25/2024	No	UPUB	24	Christopher A. Nielsen, Appellant V. Island County Sheriffs, Respondent
+868489	11/01/2024	11/25/2024	No	UPUB	24	State Of Washington, Respondent V. De Chi Trac, Appellant
+868527	11/01/2024	11/25/2024	No	UPUB	24	State Of Washington, Respondent V. Tabatha Ann Scott, Appellant
+864271	11/01/2024	11/25/2024	No	UPUB	24	Madhusudhan Ananderi Kandadai, Appellant V. Snohomish County, Respondent
+868551	11/05/2024	11/25/2024	No	UPUB	20	Lanette Habets, Et Al, Respondents V. Brittany Askren, Appellant
+868519	11/05/2024	11/25/2024	No	UPUB	20	Ricky Duane Bolan, Appellant V. Thurston County, Respondent
+868501	11/05/2024	11/25/2024	No	UPUB	20	State Of Washington, Respondent V Steven Lee Walthall, Appellant
+868390	11/06/2024	11/25/2024	No	UPUB	19	State Of Washington, Respondent V. Kelly Joe Weiss, Appellant
+855263	11/06/2024	11/25/2024	No	UPUB	19	State Of Washington, Respondent V. Samuel Whitfield, Appellant
+861492	11/06/2024	11/25/2024	No	UPUB	19	Aaron Paddock, Appellant And Louise May, Respondent
+868594	11/07/2024	11/25/2024	No	UPUB	18	Laurie M. Kitselman & Eric Carlson, Appellants V. Dawn Darington Et Al, Respondents
+861972	11/07/2024	11/25/2024	No	UPUB	18	Robert Schrader Et Ano, Appellants V. Shawn Griggs Et Ano, Respondents
+862227	11/07/2024	11/25/2024	No	UPUB	18	Meshal El Gamia, Appellant V. Micheal J. Romoser Et Al, Respondent
+853821	11/07/2024	11/25/2024	No	UPUB	18	State Of Washington, Respondent V. Shawn Michael Stimpson, Appellant
+868616	11/07/2024	11/25/2024	No	UPUB	18	Diana Marie Fields, Respondent V. Markus Anderson Fields, Appellant
+867628	11/07/2024	11/25/2024	No	UPUB	18	Delaura Norg Et Al. V. City Of Seattle
+856197	11/08/2024	11/25/2024	No	UPUB	17	In The Matter Of The Adoption D.a.c.
+862014	11/08/2024	11/25/2024	No	UPUB	17	Central Steel Inc., Appellant V. Wa State Dept. Of Labor And Industries, Respondent
+855441	11/08/2024	11/25/2024	No	UPUB	17	Isabelle Latour, Respondent V. Sean Kuhlmeyer, Appellant
+870769	11/08/2024	11/25/2024	No	UPUB	17	State Of Washington, Respondent V. Steven Mcmillin, Appellant
+860666	11/13/2024	11/25/2024	No	UPUB	12	Dept. Of Labor & Industries, Appellant V. Potelco, Inc.:jeff Lampman & Brett Mongomery, Respondent
+868454	11/13/2024	11/25/2024	No	UPUB	12	State Of Washington, Respondent V. Leslie Elaine Tramble, Appellant
+857096	11/13/2024	11/25/2024	No	UPUB	12	Newman Du Wors, Respondent V. Landmark Technology A, Llc, Appellants
+857045	11/14/2024	11/25/2024	No	UPUB	11	Mdk General Construction, Llc, Appellant V. Aspen Grove Owners Association, Respondent
+860097	11/14/2024	11/25/2024	No	UPUB	11	Maureen Kelly, Appellant V. Dave Demulling Et Ano, Respondents
+858408	11/14/2024	11/25/2024	No	UPUB	11	Christia Adam Fortney, Et Al., Respondents V. Lance Sayre, Appellant
+868586	11/14/2024	11/25/2024	No	UPUB	11	Henry Schein, Inc., Et Al., Appellants V. Dept. Of L & I, State Of Wa, Respondent
+859285	11/14/2024	11/25/2024	No	UPUB	11	Heath Rayno, Respondent V. Parker Savannah Brinkerhoff, Appellant
+855115	09/11/2024	11/19/2024	Yes	UPUB	69	Erin Mccarthy, Respondent V. Alan Adams, Appellant
+854364	09/11/2024	11/19/2024	Yes	UPUB	69	Wilmington Trust, National Association, Res. V. Heifa Voght, App.
+866109	09/19/2024	11/19/2024	Yes	PIP	61	* State Of Washington, Respondent V. Dannie C. Brashear, Appellant
+855328	10/29/2024	11/19/2024	No	UPUB	21	State Of Washington, Respondent V. Kaz Airk Joshua Mckenzie, Appellant
+866591	10/29/2024	11/19/2024	No	UPUB	21	Pedro Navarro V. King County Sheriff's Office Et Al.
+868560	10/29/2024	11/19/2024	No	UPUB	21	State Of Washington, Respondent V Zaquai Zekie De Shay Mccray Appellant
+855620	10/29/2024	11/19/2024	No	UPUB	21	Personal Restraint Petition Of Jeffrey M. Kinzle
+868543	10/29/2024	11/19/2024	No	UPUB	21	Nicole Garza, Appellant V Jude Bailey, Et Al, Respondents
+862308	10/30/2024	11/19/2024	No	UPUB	20	In Re The Detention Of S.n.
+858254	10/30/2024	11/19/2024	No	UPUB	20	State Of Washington, Respondent V. Marques Watson, Appellant
+860411	10/30/2024	11/19/2024	No	UPUB	20	State Of Washington, Respondent V. Tomas Solomon Afeworki, Appellant
+857436	10/30/2024	11/19/2024	No	UPUB	20	In The Matter Of The Estate Of: David Mcbrayer Iii
+852086	04/16/2024	10/28/2024	Yes	PUB	195	* Steven Beard, Appellant V. The Everett Clinic Pllc, Et Al, Respondents
+861620	04/17/2024	10/28/2024	Yes	UPUB	194	Matthew & Kaylyne Newell, Appellant/cross-respondents V. Pierce County, Respondent/Cross-Appellant
+858122	07/16/2024	10/28/2024	Yes	UPUB	104	Karen Harder, Et Ano., Appellant V. City of Seattle, Et Ano., Respondent
+811959	07/18/2024	10/28/2024	Yes	UPUB	102	Marianne Meeker, Appellant V. James H. Orr, Et Ux., Et Al., Respondents
+854003	07/24/2024	10/28/2024	Yes	PUB	96	* Shelley S. Hawkins, Respondent V. Ace American Insurance Company, Appellant
+857584	09/11/2024	10/28/2024	Yes	UPUB	47	Jake Platt, Respondent V. Paige Wager, Appellant
+866141	09/12/2024	10/28/2024	Yes	UPUB	46	State Of Washington, Respondent V. Sammy Eric Petersen, Appellant
+866125	09/13/2024	10/28/2024	Yes	UPUB	45	William Newcomer, Resp/X-App V. Michael Cohen, Et Al., Apps/X-Resps
+857088	09/19/2024	10/28/2024	Yes	PUB	39	* Thomas E. Bittner, Appellant V. Symetra Life Insurance Company, Respondent
+856103	05/29/2024	10/14/2024	Yes	UPUB	138	Thomas E. Peak, Appellant V. Wa State Dept. Of Transportation, Respondent
+853082	05/31/2024	10/14/2024	Yes	UPUB	136	In Re Estate Of Khurram S. Pasha
+849531	06/13/2024	10/14/2024	Yes	UPUB	123	State Of Washington, Respondent V. Anthony Allen Crouch, Appellant
+857282	07/11/2024	10/14/2024	Yes	PUB	95	* C.s.a, Et Al., Appellant V. Bellevue School District No 405, Respondent
+860909	07/24/2024	10/14/2024	Yes	PUB	82	* In The Matter Of The Parental Rights To A.g.l., A.s.l., L.e.l.
+855841	09/17/2024	10/14/2024	Yes	UPUB	27	Dale Williams, Appellant V. West Coast Autoworks, Inc., Et Al., Respondents
+850181	04/18/2024	10/07/2024	Yes	UPUB	172	Channary Hor, Appellant V. City Of Seattle, Et Al, Respondents
+851454	05/30/2024	10/07/2024	Yes	PIP	130	* State Of Washington, Respondent V. Andrey Chuprinov, Appellant
+857568	06/12/2024	10/07/2024	Yes	PUB	117	* Wanthida Chandrruangphen, App V. City Of Sammamish, Resp
+857185	07/09/2024	10/07/2024	No	UPUB	90	State Of Washington, Respondent V. Rylend Farris, Appellant
+855107	09/13/2024	10/07/2024	No	UPUB	24	State Of Washington, Respondent V. Erick Brandon Struthers, Appellant
+861484	09/18/2024	10/07/2024	No	UPUB	19	Mei Xia Huang, Appellant V. Kannin Law Firm, P.s., Et Al, Respondent
+851195	09/20/2024	10/07/2024	No	UPUB	17	State Of Washington, Respondent V. Peter Lewis-fernando Garrido, Appellant
+856961	09/24/2024	10/07/2024	No	UPUB	13	Personal Restraint Petition Of Jess Richard Smith
+854356	05/29/2024	09/30/2024	Yes	UPUB	124	vs Developing, Llc, Appellant V. Brmk Priest Point, Llc, Et Al., Respondents
+856260	05/30/2024	09/30/2024	Yes	UPUB	123	Jesse Rapczak, Et Ano., Appellant V. City Of Kirkland, Respondent
+854259	06/05/2024	09/30/2024	Yes	UPUB	117	Zak Smith, Appellant V. Gen Con Llc Et Al, Respondent
+855026	06/06/2024	09/30/2024	Yes	PUB	116	* Virginia Mason Medical Center, Appellant V. Rheannon Androckitis, Respondent
+853724	09/17/2024	09/30/2024	No	UPUB	13	State Of Washington, Respondent V. Devon Skye Evans, Appellant
+860143	09/18/2024	09/30/2024	No	UPUB	12	In Re The Detention Of C.o.d.
+852825	09/18/2024	09/30/2024	No	UPUB	12	State Of Washington, Respondent V. Christopher Martin Moller, Appellant
+845039	09/19/2024	09/30/2024	No	UPUB	11	Dominique M. Keimbaye, Petitioner V. Kimberly A. Exe, Respondent
+859650	09/20/2024	09/30/2024	No	UPUB	10	John Scannell, Appellant V. Score Jail Et Al, Respondents
+860704	09/20/2024	09/30/2024	No	UPUB	10	State Of Washington, Respondent V. Corey Damon Montgomery, Appellant
+858262	09/20/2024	09/30/2024	No	UPUB	10	State Of Washington, Respondent V. Michael Papuzza, Appellant
+859722	09/24/2024	09/30/2024	No	UPUB	6	Edward Hartnett, Appellant V. Department Of Labor And Industries, Respondent
+860364	09/24/2024	09/30/2024	No	UPUB	6	Fred Pritchard, Appellant, V. Peacehealth/st. Joseph Hospital, Respondent
+859633	09/24/2024	09/30/2024	No	UPUB	6	Siddharth Jha, Appellant V. Varisha Mahmood Khan, Respondents
+855361	09/25/2024	09/30/2024	No	UPUB	5	Asya Ruthea Bradford, Appellant V. State Of Washington, Respondent
+837117	09/25/2024	09/30/2024	No	UPUB	5	Personal Restraint Petition Of Akeel Jamal Bin-bellah
+860151	09/25/2024	09/30/2024	No	UPUB	5	In Re The Detention Of A.p.
+858297	09/25/2024	09/30/2024	No	UPUB	5	Clark/lewis A Jv, Respondent V. Dept Of L & I Of Wa State, Appellant
+857525	04/24/2024	09/23/2024	Yes	UPUB	152	Nathan Jorgensen, Res/cross-app. V. Subdued Excitement Inc., App/cross-res.
+847945	07/11/2024	09/23/2024	Yes	UPUB	74	State Of Washington, Respondent V. Jang B. Singh, Appellant
+860763	09/12/2024	09/23/2024	No	UPUB	11	Alicia Olivera, Respondent V. Ccs Washington Janitorial, Inc., Appellant
+857215	09/12/2024	09/23/2024	No	UPUB	11	State Of Washington, Respondent V. Franklin Hutton, Appellant
+855212	09/12/2024	09/23/2024	No	UPUB	11	State Of Washington, Respondent V. Michael Allen Rideaux, Appellant
+862553	09/12/2024	09/23/2024	No	UPUB	11	Faten Anwar, Appellant V. Paypal Inc., Respondent
+862570	09/13/2024	09/23/2024	No	PUB	10	* Daryl Pecelj Et Ano, Appellants V. Derek Sparks Et Al, Respondents
+842781	09/13/2024	09/23/2024	No	UPUB	10	State Of Washington, Respondent V. Kavey Jumon Pollard, Sr., Appellant
+855174	09/17/2024	09/23/2024	No	UPUB	6	State Of Washington, Respondent V. Bryan Johnathan Parent, Appellant
+857029	09/17/2024	09/23/2024	No	UPUB	6	Stafford Healthcare Seatac, Llc, Respondent V. Gale M. Page, Appellant
+856707	09/17/2024	09/23/2024	No	UPUB	6	Lynn Mckinney, Appellant V. John Jacobs, Respondent
+851161	09/17/2024	09/23/2024	No	UPUB	6	State Of Washington, Respondent V. Donald Legrone, Appellant
+857941	09/18/2024	09/23/2024	No	UPUB	5	State Of Washington, Appellant V. Alexis Cortez-dominguez, Respondent
+860381	09/19/2024	09/23/2024	No	UPUB	4	In Re The Estate Of Heidemarie Staab
+859901	09/19/2024	09/23/2024	No	UPUB	4	Bulldog Property Services, Inc., Respondent V. Maria Cruz, Appellant
+849484	03/05/2024	09/16/2024	Yes	UPUB	195	In Re: Jorge H. Navas, Appellant V. Myrna Linett Duarte Sas, Respondent
+852027	07/09/2024	09/16/2024	Yes	UPUB	69	Jonathan T. Sorrentino, Res. V. Volkswagen Group Of America, Inc., Et Al., Apps.
+851519	07/09/2024	09/16/2024	Yes	UPUB	69	State Of Washington, Respondent V. Cartez Juwon Green, Appellant
+849239	07/24/2024	09/16/2024	Yes	PUB	54	* State Of Washington, Respondent V. Darris Drake Jr., Appellant
+857011	09/10/2024	09/16/2024	No	UPUB	6	State Of Washington, Respondent V. Nathan Eric Peters, Appellant
+860658	09/10/2024	09/16/2024	No	UPUB	6	William Montague, Appellant, V. Brain Injury Law Of Seattle Inc. Et Al, Respondent
+857100	09/10/2024	09/16/2024	No	UPUB	6	Villa Marina Assoc., Appellant V. Richard Cassady, Respondent
+861352	09/11/2024	09/16/2024	No	UPUB	5	Corrina Markley, Appellant V. City Of Seattle, Respondent
+855867	09/11/2024	09/16/2024	No	UPUB	5	Equity Residential Management Llc., Respondent V. Minnie Thomas, Appellant
+852868	06/11/2024	09/09/2024	Yes	PIP	90	* State Of Washington, Respondent V. Ahmed Mohamud Wasuge, Appellant
+860356	07/16/2024	09/09/2024	Yes	UPUB	55	Angelica Campbell, Et Al., Apps. V. City Of Seattle, Et Al., Res.
+861638	03/13/2024	09/03/2024	Yes	UPUB	174	State Of Washington, Respondent V. Owen Gale Ray, Appellant
+848623	04/11/2024	09/03/2024	Yes	UPUB	145	State Of Washington, Respondent V. David M. Putman, Appellant
+854666	04/16/2024	09/03/2024	Yes	UPUB	140	Brenda Welch, Appellant V. Pemco Mutual Insurance Company, Respondent
+848542	04/17/2024	09/03/2024	Yes	UPUB	139	State Of Washington, Respondent V. Alan Carlton Moore, Jr., Appellant
+856600	06/04/2024	09/03/2024	Yes	PUB	91	* Glacier Northwest, Inc., Appellant V. Wa State Dept. Of Labor & Industries, Respondent
+850377	06/05/2024	09/03/2024	Yes	UPUB	90	State Of Washington, Respondent V. Matthew John Jagger, Appellant
+860232	06/13/2024	09/03/2024	Yes	UPUB	82	Master Builders Association Et Al, Appellants, V. Colleen Flynn, Respondent
+852841	07/10/2024	09/03/2024	Yes	UPUB	55	Raz Yaron, Respondent/cr-appellant V. Sierra S. Conley, Appellant/cr-respondent
+853341	07/12/2024	09/03/2024	Yes	UPUB	53	State Of Washington, Respondent V. Robert Patrick Arviso, Appellant
+849212	07/19/2024	09/03/2024	Yes	PUB	46	* Jody Aucoin Et Al, Appellants V. C4digs, Inc Et Al, Respondents
+866265	07/23/2024	09/03/2024	No	UPUB	42	Angela Helvey, Appellant V Employment Security Department, Et Al, Respondents
+849506	04/09/2024	08/26/2024	Yes	PUB	139	* State Of Washington, Respondent V. Joel Duane Zwald, Appellant
+847449	06/06/2024	08/26/2024	Yes	UPUB	81	State Of Washington, Respondent V. Rigo Roberto Cortez, Appellant
+851144	06/07/2024	08/26/2024	Yes	PUB	80	* Shella And Ron Simbulan, Resp/cross-app V. Northwest Hospital & Medical Center, App/cross-resp
+854658	06/12/2024	08/26/2024	Yes	UPUB	75	Kurt Benshoof, Appellant V. Jessica Owen, Respondent
+850920	06/12/2024	08/26/2024	No	UPUB	75	Kurt Benshoof, Appellant V. Nathan Cliber, Et Al., Respondents
+858114	07/16/2024	08/26/2024	Yes	UPUB	41	Bremerton School District, Appellant V. Schools Insurance Assoc. Of Wa, Respondent
+851390	07/17/2024	08/26/2024	Yes	UPUB	40	In Re The Marriage Of Henry Louis Lomasney, Jr., App. And Darcy Kassandra Newby, Res.
+844776	07/23/2024	08/26/2024	Yes	UPUB	34	State Of Washington, Resp/cross-app V. Brett Harold Grimnes, App/cross-resp
+861174	07/24/2024	08/26/2024	Yes	UPUB	33	Shangri-la Llc, Appellant V. Eagle West Insurance Company, Respondent
+854771	04/12/2024	08/19/2024	Yes	PUB	129	* Service Employees International Union Healthcare 1199nw V. Snohomish County Public Hospital No 1
+854241	05/29/2024	08/19/2024	Yes	UPUB	82	Robinett Investment Co Llc., Appellant V. State Of Wa. Dept Of Transportation, Respondent
+850776	06/04/2024	08/19/2024	Yes	UPUB	76	Jodi Van, Et Ano, Appellants V. City Of Burien, Respondent
+853601	06/07/2024	08/19/2024	Yes	UPUB	73	State Of Washington V. American Tobacco Co., Et Al.
+853333	06/11/2024	08/19/2024	Yes	UPUB	69	Fu-cheng Chen, Appellant V. Fukuen Eric Chen And Ming-fen Chen, Et Al., Respondents
+847597	06/12/2024	08/19/2024	Yes	UPUB	68	State Of Washington, Respondent V. Michael A. Sendejo, Appellant
+857738	07/10/2024	08/19/2024	Yes	UPUB	40	Bank Of New York Mellon, Appellant V. Gwen S. Bartol, Respondent
+860721	07/10/2024	08/19/2024	No	UPUB	40	In Re The Marriage Of Michelle Hope Doyle F/k/a Shea, App And Danielle Nicole Hashman, Resp
+866281	07/12/2024	08/19/2024	Yes	UPUB	38	Benjamin Orvold, Et Ux., App/cross-resp V. William Mershon, Et Ux., Resp/cross-appellant
+848569	07/19/2024	08/19/2024	Yes	UPUB	31	Personal Restraint Petition Of Jose Antonio Nava
+848577	07/19/2024	08/19/2024	Yes	UPUB	31	Personal Restraint Petition Of Jorge Nava Martinez, Jr.
+853783	07/24/2024	08/19/2024	No	UPUB	26	Tom Chartier, Et Ano, Appellant V. Ken Carlson, Et Ano, Respondents
+847503	04/10/2024	08/12/2024	Yes	UPUB	124	State Of Washington, Respondent V. Danilo Distura, Appellant
+861662	04/11/2024	08/12/2024	Yes	UPUB	123	State Of Washington, Respondent V William M. Helkenn, Iii, Appellant
+843524	04/16/2024	08/12/2024	Yes	PUB	118	* State Of Washington, Res/cross-app. V. Mical Darion Roberts, App/cross-res.
+834126	04/17/2024	08/12/2024	Yes	UPUB	117	State Of Washington, Resp-cr App V. Lavelle Kenneth Johnson, App-cross Resp
+861832	04/24/2024	08/12/2024	Yes	UPUB	110	Personal Restraint Petition Of Myron Lynn Woods Ii
+855697	04/24/2024	08/12/2024	Yes	UPUB	110	Christian Todd Primack Metcalfe, Appellant V. Spruce Street School, Respondent
+852159	05/30/2024	08/12/2024	Yes	UPUB	74	Matson Navigation Company, Inc., Appellant V. Dept. Of Revenue, Respondent
+859978	05/31/2024	08/12/2024	Yes	PUB	73	* Ten Injured Workers V. State Of Washington Et Al
+857339	06/05/2024	08/12/2024	Yes	UPUB	68	Madison Estates Invest. Ltd Partnership, Res. V. Madison Estates Lot 5 Investments, Llc, App.
+851560	06/07/2024	08/12/2024	Yes	UPUB	66	Carol Henderson, Resp/cross-app. V. Pam Schmoll, Et Ano, App/cross-resps.
+843010	07/10/2024	08/12/2024	Yes	UPUB	33	Stephen Elder, Petitioner V. Midland Funding, Llc, Et Al., Respondents
+852612	07/23/2024	08/12/2024	Yes	UPUB	20	State Of Washington, Respondent V. D.l.w., Appellant
+851471	02/27/2024	08/05/2024	Yes	PUB	160	* Shg Garage Spe, Et Al., Respondents V. City Of Seattle, Appellant
+845845	03/12/2024	08/05/2024	Yes	UPUB	146	Cr Construction, Llc, Respondent V. Sherlock Investments Duvall, Llc, Appellant
+861794	04/18/2024	08/05/2024	Yes	UPUB	109	State Of Washington, Respondent V. Joseph Isaiah Leonard, Appellant
+844792	04/19/2024	08/05/2024	Yes	UPUB	108	State Of Washington, Respondent V. Neil James Roberson, Appellant
+845519	04/23/2024	08/05/2024	Yes	PUB	104	* State Of Washington, Respondent V. Wendell Allen Wilson, Appellant
+849077	06/06/2024	08/05/2024	Yes	UPUB	60	Atlas Debt Holdings, Llc, Petitioner V. Seafood Express, Llc, Respondents
+849646	06/11/2024	08/05/2024	Yes	PUB	55	* Valley Cities Counseling & Consultation, Respondent V. Ezra L. Eddines, Petitioner
+854429	06/11/2024	08/05/2024	Yes	UPUB	55	Christopher Dougherty, Appellant V. Janes Gypsum Floors, Inc., Respondents
+847988	07/12/2024	08/05/2024	No	UPUB	24	State Of Washington, Respondent V. Robert Patrick Arviso, Appellant
+866192	07/24/2024	08/05/2024	No	UPUB	12	State Of Washington, Respondent V. Jeffrey Allen Mcgee, Appellant
+849808	05/31/2024	07/29/2024	Yes	UPUB	59	State Of Washington, Respondent V. Thomas Oscar Cady, Appellant
+854763	06/05/2024	07/29/2024	Yes	UPUB	54	Bradley Feldman, Appellant V, Darren Williams, Respondent
+848119	06/06/2024	07/29/2024	Yes	PUB	53	* State Of Washington, Respondent V. Christopher Fields, Appellant
+848950	06/07/2024	07/29/2024	Yes	UPUB	52	Personal Restraint Petition Of Lonnie L. Burton, Nka Thomas Allen Zyxx
+866168	07/18/2024	07/29/2024	No	UPUB	11	State Of Washington, Respondent V. Melinda M. Steele, Appellant
+866273	07/18/2024	07/29/2024	No	UPUB	11	Joseph Gavin Morgan, Appellant V. Pierce County, Et Al., Respondents
+866257	07/18/2024	07/29/2024	No	UPUB	11	State Of Washington, Respondent V. William Lattin, Appellant
+860071	07/18/2024	07/29/2024	No	UPUB	11	Don Lionetti Et Al, App/cross-res, V. The Shriram Family Revocable Trust Et Al, Res/cross-app
+866303	07/19/2024	07/29/2024	No	UPUB	10	Anna G. Bell, Respondent V Candace K. Schupp, Appellant
+866249	07/19/2024	07/29/2024	No	UPUB	10	State Of Washington, Respondent V. Lorenzo Reyes Armenta, Appellant
+866184	07/19/2024	07/29/2024	No	UPUB	10	In Re The Personal Restraint Petition Of: Charles Andrew Bukovsky
+866214	07/23/2024	07/29/2024	No	UPUB	6	Richard Ivan Kenney, Respondent V. Angela Eidenschink, Appellant
+854836	07/23/2024	07/29/2024	No	UPUB	6	In The Matter Of The Parental Rights To A.r.
+860674	07/23/2024	07/29/2024	No	UPUB	6	Fairweather Management Corp. V. Washington State Employment Security Dept.
+852141	07/24/2024	07/29/2024	No	UPUB	5	State of Washington, Respondent v. Jose Beletzuy Cajas , Appellant
+845501	04/09/2024	07/22/2024	Yes	PUB	104	* State Of Washington, Respondent V. Nicholas Windsor Anderson, Appellant
+852795	06/13/2024	07/22/2024	No	UPUB	39	State Of Washington, Respondent V. Kenneth Sykes Jones, Appellant
+851047	07/10/2024	07/22/2024	No	UPUB	12	State Of Washington, Respondent V. Joaquin David Garcia, Appellant
+854968	07/12/2024	07/22/2024	No	UPUB	10	Iliad, Inc., Respondent V. Valhalla Construction & Recycling, Appellant
+839225	07/12/2024	07/22/2024	No	UPUB	10	Michelina De Simone, Respondent V. Winfred Donell Smith, Ii, Appellant
+858041	07/12/2024	07/22/2024	No	UPUB	10	Gary Sullivan And Fariba Daneshgaran, Pets. V. King County, Et Al., Respondents
+858360	07/16/2024	07/22/2024	No	UPUB	6	Heidi Collins & Daryl Collins, Appellants V. Swedish Medical Center, Respondent
+858319	07/16/2024	07/22/2024	No	UPUB	6	Sigrid Perez, Appellant V. City Of Seattle, Respondent
+855590	07/16/2024	07/22/2024	No	UPUB	6	Aubrey K. Pauley, Appellant V. David G. Pauley, Respondent
+856154	07/17/2024	07/22/2024	No	UPUB	5	U.s. Bank, Appellant V. Estate Of Bradley Hrutfjord, Respondent
+862642	07/17/2024	07/22/2024	No	UPUB	5	Mayra Sanchez, Et Ano V. Stanley Hanson Ii, Et Ano
+866231	07/17/2024	07/22/2024	No	UPUB	5	State Of Washington, Respondent V. Bradley Joseph Quinn, Appellant
+866311	07/17/2024	07/22/2024	No	UPUB	5	Amorea Rocha, Respondent V. Hamal Strand, Appellant
+861808	03/08/2024	07/15/2024	Yes	UPUB	129	State Of Washington, Respondent V. Adam Judah Diggins, Appellant
+852001	04/17/2024	07/15/2024	Yes	PUB	89	* Anita Asphy, Respondent V. State Of Washington, Dcyf, Petitioner
+854011	06/04/2024	07/15/2024	No	UPUB	41	In Re The Detention Of A.g.s.
+856782	07/09/2024	07/15/2024	No	UPUB	6	In Re The Detention Of M.c.
+856863	07/09/2024	07/15/2024	No	UPUB	6	In Re The Detention Of A.v.
+855719	07/09/2024	07/15/2024	No	UPUB	6	Dennis Mcguire, Appellant V. Boeing Company, Et Ano, Respondents
+848551	07/10/2024	07/15/2024	No	UPUB	5	Mdb Landmark Llc, Respondent V. William Washington, Appellant
+856014	07/10/2024	07/15/2024	No	UPUB	5	In The Matter Of The Parental Rights To A.r.l.
+858432	07/11/2024	07/15/2024	No	UPUB	4	State Of Washington, Respondent/cr-appellant V. Delino J. Olebar, Appellant/cr-respondent
+851543	07/11/2024	07/15/2024	No	UPUB	4	Michael Schreck, App. V. Seattle Office Of Economic Development, Et Al., Res.
+852311	07/11/2024	07/15/2024	No	UPUB	4	Kirk Wilson, Respondent V. Carol Denise Dillon, Alice Hudson, Et Al., Petitioners
+855123	07/11/2024	07/15/2024	No	UPUB	4	Robert Smith, Respondent V. Brian Heberling, Appellant
+861701	03/06/2024	07/08/2024	Yes	UPUB	124	Revocable Living Trust Of: Raymond A Levesque And Marilyn A Levesque
+850091	03/08/2024	07/08/2024	Yes	UPUB	122	The Kroger Co., Respondents V. Keith Caneer, Appellant
+849034	04/19/2024	07/08/2024	Yes	UPUB	80	R.M., Respondent V. King County, Petitioner
+856367	04/19/2024	07/08/2024	Yes	PUB	80	* Steve Horvath, App. V. Dbia Services Dba Metropolitan Improvement District, Res.
+845187	05/29/2024	07/08/2024	No	UPUB	40	Joseph Eugene Valleroy, Resp/cross-app V. Melissa Palos App/cross-resp
+860275	06/11/2024	07/08/2024	No	UPUB	27	In Re H. And C.S. Living Trust, Michelle Vittitow, Respondent V. Axel Strakeljahn Et Al, Appellants
+850750	03/07/2024	07/01/2024	Yes	UPUB	116	Eric Hood, Appellant V. City Of Langley, Respondent
+845012	03/08/2024	07/01/2024	Yes	UPUB	115	In Re Brick Earl Harris, Respondent And Robert Hobson Brimlow, Appellant
+848763	03/13/2024	06/24/2024	Yes	UPUB	103	In Re The Dependency Of N.m.l.h.
+847970	06/05/2024	06/24/2024	No	UPUB	19	Personal Restraint Petition Of Dion E. Johnson
+854941	06/13/2024	06/24/2024	No	UPUB	11	State Of Washington, Respondent V. Nicholas James Pine-nelson, Appellant
+850725	06/13/2024	06/24/2024	No	UPUB	11	State Of Washington, Respondent V. Nathan William Boswell, Appellant
+852370	06/13/2024	06/24/2024	No	UPUB	11	Dimitar K. Dermendziev, Appellant V. Georghe Sandru, Respondent
+857983	06/13/2024	06/24/2024	No	PUB	11	* Kathryn Cox, Appellant V. Charles A. Fulmer, Respondent
+858980	01/18/2024	06/17/2024	Yes	UPUB	151	Marijke Deutscher & Allen Deutscher, Respondents V. Romiro Cortes, Petitioner
+847112	03/05/2024	06/17/2024	Yes	UPUB	104	Personal Restraint Petition Of Gustavo Jeremy Mcdonald
+858980	03/07/2024	06/17/2024	Yes	UPUB	102	Marijke Deutscher & Allen Deutscher, Respondents V. Romiro Cortes, Petitioner
+851497	04/12/2024	06/17/2024	Yes	PUB	66	* State Of Washington, Respondent V. Roman James Allah, Appellant
+850245	04/24/2024	06/17/2024	Yes	UPUB	54	State Of Washington, Respondent V. Paul Klever, Appellant
+856464	06/06/2024	06/17/2024	No	UPUB	11	Haidar Falah Alshamaa, Respondent V. Hussain Kadim Khadem Alshafei, Appellants
+857801	06/06/2024	06/17/2024	No	UPUB	11	Wren L. Hansen, Appellant V. Leslee M. Stockton, Respondent
+856936	06/06/2024	06/17/2024	No	UPUB	11	State Of Washington, Respondent V. Jeremiah Lee Stifle, Appellant
+858246	06/06/2024	06/17/2024	No	UPUB	11	Frederick Reynolds, Respondent/cross-app V. Josanne Lovick, Appellant/cross-resp
+858726	06/07/2024	06/17/2024	No	UPUB	10	Gabriella Kertesz, Appellant V. Bob Ferguson, Respondent
+857762	06/07/2024	06/17/2024	No	UPUB	10	Todd Skoglund, Appellant V. Sahalee Maintenance Association, Respondent
+858181	06/11/2024	06/17/2024	No	PUB	6	* State Of Washington, Respondent V. Humberto Jose Garcia, Appellant
+859862	06/11/2024	06/17/2024	No	UPUB	6	Stanley Xu And Nanling Chen, Appellants V. Judgment Services, Llc, Respondent
+830759	06/11/2024	06/17/2024	No	UPUB	6	Personal Restraint Petition Of Ricky Arntsen
+858718	06/12/2024	06/17/2024	No	UPUB	5	Mehmet Serkan Ketenci, Appellant V. Aino Kaarina Ketenci, Respondent
+856049	06/12/2024	06/17/2024	No	UPUB	5	State Of Wa Ex Rel. Larry M. Kasoff, App. V. Harris & Harris, Ltd., Res.
+844873	01/12/2024	06/10/2024	Yes	UPUB	150	State Of Washington, Respondent V. Todd Mihail Kingma, Appellant
+854739	05/29/2024	06/10/2024	No	UPUB	12	In Re The Detention Of B.c.
+856448	05/29/2024	06/10/2024	No	UPUB	12	State Of Washington, Respondent V. James Robert Lake, Appellant
+850156	05/30/2024	06/10/2024	No	UPUB	11	Gregory Ryan, Et Ano., Appellant V. City Of Renton, Et Ano., Respondent
+854828	05/30/2024	06/10/2024	No	UPUB	11	In Re The Detention Of: Richard Jackson
+850806	05/31/2024	06/10/2024	No	UPUB	10	State Of Washington, Respondent V. Thomas Oscar Cady, Appellant
+859382	05/31/2024	06/10/2024	No	UPUB	10	Dependency Of K.v.m.
+854518	05/31/2024	06/10/2024	No	UPUB	10	State Of Washington, Respondent V. Steven Franklin Talaga, Appellant
+854496	05/31/2024	06/10/2024	No	PUB	10	* Aleksey Zorchenko And Nina Zorchenko, App/cr-resps V. City Of Federal Way, Et Al., Resp/cr-apps
+852701	06/04/2024	06/10/2024	No	UPUB	6	State Of Washington, Respondent V. A.c.-b, Appellant
+849735	06/04/2024	06/10/2024	No	UPUB	6	State Of Washington, Respondent V. Shane Marston, Appellant
+859480	06/04/2024	06/10/2024	No	UPUB	6	Christell Charity Krsak, Respondent V. Gregory Michael Krsak, Appellant
+856413	06/05/2024	06/10/2024	No	UPUB	5	In Re The Detention Of: S.m.
+850202	06/05/2024	06/10/2024	No	UPUB	5	State Of Washington, Respondent V. Kyle Caperoon, Appellant
+856057	06/05/2024	06/10/2024	No	UPUB	5	In Re The Detention Of: K.g.
+857398	02/28/2024	06/04/2024	Yes	PUB	97	* Flying T Ranch, Inc., Appellant V. Stillaguamish Tribe Of Indians, Et Al., Respondents
+847481	01/17/2024	06/03/2024	Yes	UPUB	138	12th And John Investors, Llc, Appellant V. Broadmark Realty Capital Inc., Respondents
+848259	01/25/2024	06/03/2024	Yes	UPUB	130	Matter Of The Estate Of: Larry Dean Niggli
+842226	02/27/2024	06/03/2024	Yes	UPUB	97	State Of Washington, Respondent V. Peter L. Trevigne, Appellant
+859838	03/06/2024	06/03/2024	Yes	UPUB	89	Washington Election Integrity Coalition Et Al. V. Julie Wise Et Al.
+846094	04/12/2024	06/03/2024	Yes	UPUB	52	State Of Washington, Respondent V. Rigoberto Galvan, Appellant
+853520	04/23/2024	06/03/2024	Yes	UPUB	41	Wilmington Savings Fund Society, Fsb, App V. Beverly D. Hopkins, Resp
+855476	05/30/2024	06/03/2024	No	UPUB	4	Kent Huxel, Appellant V. Board Of Registered Professional Engineers & Land Surveyors, Respondent
+858483	05/30/2024	06/03/2024	No	UPUB	4	Pshc, Llc, Appellant V. Frederick Eastman And Megan Eastman, Respondents
+856669	02/29/2024	05/28/2024	Yes	UPUB	89	Ppf Amli 1260 Republican Street, Llc, App V. John Wilson, Resp
+852850	03/05/2024	05/28/2024	Yes	UPUB	84	Quest Diagnostics, Inc., Appellant V. Aig Specialty Insurance Co., Et Al, Respondent
+841157	03/05/2024	05/28/2024	Yes	UPUB	84	Morgan Aiken Iii, Appellant V. Rocio Sanchez & Marta Becerra, Respondent
+849859	04/09/2024	05/28/2024	Yes	UPUB	49	Cory Evans, Respondent V. Hidden River Ranch, Et Al., Appellant
+855662	04/11/2024	05/28/2024	Yes	UPUB	47	Citizens To Stop The Sr 169 Asphalt Plant, App V. King Co., Lakeside Industries Inc., Resps
+844113	01/23/2024	05/20/2024	Yes	UPUB	118	State Of Washington, Respondent V. Richard Dewayne Nelson, Appellant
+861719	02/29/2024	05/20/2024	Yes	UPUB	81	Anthony J. Bozung, Jr., Appellant, V. Multicare Health System, Et Al, Respondents
+841271	03/07/2024	05/20/2024	Yes	PUB	74	* State Of Washington, Respondent V. Brandon L. Holmes, Appellant
+861867	03/13/2024	05/20/2024	Yes	UPUB	68	Minh-nhat T Nguyen, Respondent/cross-appellant V. Adam S Mccullough, Appellant/cross-respondent
+842978	04/10/2024	05/20/2024	Yes	PUB	40	* State Of Washington, Respondent V. Bobby Darnell Gwin, Appellant
+856421	04/10/2024	05/20/2024	Yes	PUB	40	* In Re The Dependency Of: N.B.G.
+853023	04/12/2024	05/20/2024	Yes	UPUB	38	In Re The Marriage Of: Laurel Darlene Otis, Respondent And Brandon Levi Otis, Appellant
+849476	04/18/2024	05/20/2024	Yes	UPUB	32	State Of Washington, Respondent V. James Patrick Hiltbruner, Appellant
+856111	04/19/2024	05/20/2024	Yes	UPUB	31	Matthew Aird, Respondent V. Wa State Dept Of Transportation, Petitioner
+858700	01/19/2024	05/13/2024	Yes	PUB	115	* Darren Lee Arends, Appellant V. State Of Washington, Respondent
+846248	03/01/2024	05/13/2024	Yes	UPUB	73	Carolyn And Benjamin Lange, Appellants V. C.l., Respondent
+847716	03/06/2024	05/13/2024	Yes	UPUB	68	State Of Washington, Respondent V. Luis Ruben Ibarra, Appellant
+845705	03/12/2024	05/13/2024	Yes	PUB	62	* State Of Washington, Respondent V. James Dean Schultz, Appellant
+861697	03/12/2024	05/13/2024	Yes	UPUB	62	State Of Washington, Respondent V. John Patrick Kelly, Appellant
+848925	03/12/2024	05/13/2024	No	UPUB	62	State Of Washington, Respondent V. Steven James Krier, Appellant
+861786	04/09/2024	05/13/2024	No	UPUB	34	State Of Washington, Respondent V. Dominic Antonio England, Appellant
+850539	01/24/2024	05/06/2024	Yes	UPUB	103	Margery Jones, Appellant V. Snohomish County, Et Al., Respondents
+850661	03/01/2024	05/06/2024	Yes	PIP	66	* David Hockett, Respondent V. Seattle Police Department, Appellant
+846507	03/01/2024	05/06/2024	Yes	UPUB	66	State Of Washington, Respondent V. Harun H Sheikh, Appellant
+854534	03/08/2024	05/06/2024	Yes	UPUB	59	In The Matter Of The Parental Rights To K.g.o.
+843915	04/12/2024	05/06/2024	No	UPUB	24	Personal Restraint Petition Of Edmond Clay Overton
+861760	04/24/2024	05/06/2024	No	UPUB	12	State Of Washington, Respondent V. Quincy V. Hawkins, Appellant
+847937	04/23/2024	05/02/2024	Yes	UPUB	9	Personal Restraint Petition Of Jeffrey Karl Driver
+859129	01/12/2024	04/29/2024	No	UPUB	108	State Of Washington, Respondent V. Adam Ezra Paris, Appellant
+859161	01/19/2024	04/29/2024	Yes	UPUB	101	Matthew Noffke, Appellant V. Susan Karstedt, Et Al., Respondents
+850946	01/24/2024	04/29/2024	Yes	PUB	96	* Tracfone Wireless, Inc., Appellant V. City Of Renton, Respondent
+852035	02/29/2024	04/29/2024	Yes	PUB	60	* Oma Construction, Inc., Appellant V. Department Of Labor And Industries, Respondent
+856529	03/07/2024	04/29/2024	Yes	PUB	53	* In Re The Detention Of Randy Ryan Ross
+848038	04/18/2024	04/29/2024	No	UPUB	11	Personal Restraint Petition Of Aquilino Coronel-cruz
+847686	04/18/2024	04/29/2024	No	UPUB	11	State Of Washington, Respondent V. Elisabeth Ashley Mckinley, Appellant
+858564	04/18/2024	04/29/2024	No	UPUB	11	Kathleen Brim V. Dmt Gardens, Llc, Et Ano
+861778	04/18/2024	04/29/2024	No	UPUB	11	State Of Washington, Respondent V. Ryan C. Gates, Appellant
+851764	04/18/2024	04/29/2024	No	UPUB	11	In Re Detention Of C.c.c.
+852540	04/18/2024	04/29/2024	No	UPUB	11	Mark Hoffman, Respondent V. Allfi, Inc., Frank Shreyberg, And John Does 1-10, Appellants
+851420	04/19/2024	04/29/2024	No	UPUB	10	In Re The Detention Of: M.f.
+848739	04/19/2024	04/29/2024	No	UPUB	10	State Of Washington, Respondent V. Tye Lane Groshong, Appellant
+856511	04/19/2024	04/29/2024	No	UPUB	10	Pedro Navarro, Appellant V. City Of Auburn; Auburn Police Department, Respondents
+861816	04/19/2024	04/29/2024	No	UPUB	10	In Re The Personal Restraint Petition Of Dokdinh Sayasack
+856391	04/19/2024	04/29/2024	No	UPUB	10	Donna Lee Schivley, Appellant V. Dr. Christine M. Schaffner, Nd, Respondent
+846051	04/23/2024	04/29/2024	No	UPUB	6	In Re The Dependency Of: E.m.
+854046	04/23/2024	04/29/2024	No	UPUB	6	In The Matter Of The Parental Rights To L.g.v.
+861743	04/23/2024	04/29/2024	No	UPUB	6	State Of Washington, Respondent V. B.j., Appellant
+856944	04/23/2024	04/29/2024	No	UPUB	6	Laurie Englund, Appellant V. State Of Wa Employment Security Dept., Respondent
+850172	04/23/2024	04/29/2024	No	UPUB	6	Personal Restraint Petition Of Michael Lee Wayne Bergman
+853767	04/24/2024	04/29/2024	No	UPUB	5	Katie Dale, Respondent V. Donald Cain Iii, Appellant
+853228	04/24/2024	04/29/2024	No	UPUB	5	In Re The Detention Of W.v.
+861824	04/24/2024	04/29/2024	No	UPUB	5	Lowery Phillips, Appellant V. Stephanie Wagner, Respondent
+854917	04/24/2024	04/29/2024	No	UPUB	5	Janet Govea, Appellant V. Dshs - Division Of Child Support, Respondent
+861751	03/06/2024	04/22/2024	Yes	UPUB	47	Maxine Mccallum, Et Al Respondent V. Corey Smith, Appellant
+861735	03/12/2024	04/22/2024	Yes	UPUB	41	State Of Washington, Respondent V. Kimothy Maurice Wynn, Appellant
+861689	04/11/2024	04/22/2024	No	UPUB	11	State Of Washington, Respondent V. Joseph Wiegert Ii, Appellant
+850270	04/11/2024	04/22/2024	No	UPUB	11	Christopher Fink, Appellant V. Bridget Fink, Respondent
+852817	04/12/2024	04/22/2024	No	UPUB	10	Mike Van Valkenburg, Respondent V. Meshesha Tadesse, Et Al., Appellants
+845314	04/12/2024	04/22/2024	No	UPUB	10	State Of Washington, Respondent V. Curtis John Walker, Appellant
+845535	04/12/2024	04/22/2024	No	UPUB	10	State Of Washington, Respondent V. James Jerome Kennedy, Appellant
+852591	04/12/2024	04/22/2024	No	UPUB	10	Christopher R. Chicatelli, Appellant V. Jaclyn M. Larson, Respondent
+853791	04/16/2024	04/22/2024	No	UPUB	6	State Of Washington, Respondent V. Benjamin Vazquez Lopez, Appellant
+849867	04/16/2024	04/22/2024	No	UPUB	6	State Of Washington, Respondent V. Derrick Stephen Fesinmeyer, Appellant
+854810	04/16/2024	04/22/2024	No	UPUB	6	Glenna Mueller, Appellant V. Michael Johnson, Respondent
+848836	04/16/2024	04/22/2024	No	UPUB	6	Valerie Strout, Appellants V. Vicki Mcgee, Respondents
+841416	04/16/2024	04/22/2024	No	UPUB	6	Ariella Klein, Appellant V. Cris Simmons Dds, Respondent
+851381	04/17/2024	04/22/2024	No	UPUB	5	In Re The Detention Of: A.m.d-l.
+859251	04/17/2024	04/22/2024	No	UPUB	5	Christopher Fiegenbaum, Appellant V. Department Of Labor & Industries, Respondent
+861841	04/17/2024	04/22/2024	No	UPUB	5	State Of Washington, Respondent V. Jason Michael Jensen, Appellant
+845420	04/17/2024	04/22/2024	No	UPUB	5	Virtual Investments Properties-vip Llc, Appellant V. Asset Commercial Lending, Respondent
+847066	04/17/2024	04/22/2024	No	PUB	5	* Post-sentence Petition Of: Aikeem Lloyd Roberts
+844407	03/05/2024	04/15/2024	Yes	UPUB	41	Steven Bagot, Respondent/cr-appellant V. Smrb, Llc, Et Al., Appellant/cr-respondents
+856626	03/08/2024	04/15/2024	Yes	UPUB	38	Karl Lee Ford, Appellant V. Department Of Corrections, Respondent
+861671	04/09/2024	04/15/2024	No	UPUB	6	State Of Washington, Respondent V. Glenard Trevell Poole, Appellant
+854488	04/09/2024	04/15/2024	No	UPUB	6	State Of Washington, Et Ano., Respondents V. Danielle Sterling And Darren Sterling, Appellants
+855395	04/09/2024	04/15/2024	No	UPUB	6	Laffon Glymph, Appellant V. Overlake Hospital Medical Center, Respondent
+855166	04/09/2024	04/15/2024	No	UPUB	6	Donald Hoth, Appellant V. Edward Hoth, Respondent
+849603	04/10/2024	04/15/2024	No	UPUB	5	Marcus Price, Appellant V. State Of Washington Department Of Social & Health Services, Respondent
+861654	04/10/2024	04/15/2024	No	UPUB	5	State Of Washington, Respondent V. Julio Jolon-puac, Appellant
+854313	04/10/2024	04/15/2024	No	UPUB	5	Debra Laudone, Appellant V. David And Susan Lewis; City Of Seattle, Respondents
+848143	04/10/2024	04/15/2024	No	PUB	5	* State Of Washington, Respondent V. Jerry B. Bogart, Appellant
+855379	04/10/2024	04/15/2024	No	UPUB	5	Stephen Ludwig Et Al, Appellants V. City Of Mountlake Terrace, Respondent
+847856	04/11/2024	04/15/2024	No	UPUB	4	In Re The Marriage Of: Joyce Calhoun, Appellant V. Allen Calhoun, Respondent
+848127	04/11/2024	04/15/2024	No	UPUB	4	State Of Washington, Respondent V. Dion Douglas Thorne, Appellant
+850741	04/11/2024	04/15/2024	No	UPUB	4	Faye Escobedo, Respondent V. Joshua Achterhof, Appellant
+858971	01/23/2024	04/08/2024	Yes	PUB	76	* View Ridge Estates Hoa, Et Al, Resps V. Walter Guetter, Et Al, Apps
+856634	01/25/2024	04/08/2024	Yes	UPUB	74	Robert Mielke, Et Al., Appellants V. Tacoma Rv Center, Et Al., Respondents
+846205	03/12/2024	04/08/2024	Yes	PUB	27	* Tang Real Estate Investments, Appellant's V. Escrow Service's Of Washington Et Al Respondents
+850938	01/23/2024	04/01/2024	Yes	UPUB	69	Tig Insurance Company, Respondent V. Ro-con Equipment Specialist, Inc., Et Ano., Appellants
+851055	01/25/2024	04/01/2024	Yes	PUB	67	* In The Receivership Of: Castle Walls Llc
+858653	02/28/2024	04/01/2024	Yes	UPUB	33	Michelle Merceri V. Dept. Of Transportation Et Al.
+840983	02/28/2024	04/01/2024	Yes	PUB	33	* Personal Restraint Petition Of Steven P. Kozol
+856901	02/28/2024	04/01/2024	No	UPUB	33	Michelle Merceri, Appellant V. State Of Wa Dept. Of Transportation, Et Al., Respondents
+853295	03/01/2024	04/01/2024	Yes	UPUB	31	Keep Kids Safe, Appellant V. King County, Respondent
+853279	03/06/2024	04/01/2024	Yes	UPUB	26	Austin Ferguson, Respondent V. Office Of Admin Hearings/div Of Child Support, Et Ano, Appellant
+839594	03/21/2024	04/01/2024	No	UPUB	11	Prince Eric Luv. Respondent V. West Coast Servicing Inc., Appellant
+844555	01/10/2024	03/25/2024	Yes	PIP	75	* State Of Washington, Respondent V. Murugananandam Arumugam, Appellant
+859196	01/11/2024	03/25/2024	Yes	UPUB	74	State Of Washington, Respondent V. Damien Charles Mccarter, Appellant
+856677	01/12/2024	03/25/2024	Yes	UPUB	73	Steven L. Pollard, Respondent V Stephanie M. Pollard, Appellant
+848496	01/19/2024	03/25/2024	Yes	UPUB	66	Jonathan Wesley Ebbeler, Appellants V. Wfg National Title Company Of Wa, Respondents
+861727	02/28/2024	03/25/2024	No	UPUB	26	State Of Washington, Respondent V. Jesse Gamez, Appellant
+859153	02/28/2024	03/25/2024	No	UPUB	26	State Of Washington, Respondent V. David Michael Rohrer, Appellant
+852256	03/01/2024	03/25/2024	Yes	PUB	24	* Allen Watkins & Janis Clark, Appellant's V. Esa Management, Respondent
+859170	03/01/2024	03/25/2024	No	UPUB	24	State Of Washington, Respondent V. Benjamin Alan Poe, Appellant
+845071	03/05/2024	03/25/2024	No	UPUB	20	State Of Washington, Respondent V. Amy Joelle Harle, Appellant
+848933	03/07/2024	03/25/2024	No	UPUB	18	State Of Washington, Respondent V. Tommie Deshawn Mitchell, Appellant
+861859	03/08/2024	03/25/2024	No	UPUB	17	Personal Restraint Petition Of Richard Lane Blakesley, Petitioner
+856804	03/12/2024	03/25/2024	No	UPUB	13	Aqeel W. Al Darraji, Appellant V State Of Washington, Et Al, Respondents
+852787	03/12/2024	03/25/2024	No	UPUB	13	Michael And Sherrie Bushman, Appellant's V. Virginia Mason Medical Center Et Al, Respondent's
+856651	01/12/2024	03/18/2024	Yes	PUB	66	* Puget Soundkeeper Alliance, Appellant V. State Of Wa Pollution Control Hearings, Et Al. Respondents
+854551	03/06/2024	03/18/2024	No	UPUB	12	In Re Detention Of: M.E.F.
+848330	03/06/2024	03/18/2024	No	UPUB	12	State Of Washington, Respondent V. Lavelle Kenneth Johnson, Appellant
+855913	03/07/2024	03/18/2024	No	PUB	11	* In Re Dependency Of: C.E.C.L.
+839152	03/08/2024	03/18/2024	No	UPUB	10	Nathan Jovee, Appellant V. Brandon Huber, Respondent
+851331	03/08/2024	03/18/2024	No	UPUB	10	State Of Washington, Res/cross-app. V. Rene Mackperson Ramirez-Lopez, App/cross-res.
+852116	03/08/2024	03/18/2024	No	UPUB	10	Dependency Of: H.G.N-C.
+851616	03/12/2024	03/18/2024	No	UPUB	6	State Of Washington, Respondent V. Joshua Dean Mcintyre, Appellant
+848097	03/13/2024	03/18/2024	No	UPUB	5	State Of Washington, Respondent V. Carl Harris, Appellant
+852299	03/13/2024	03/18/2024	No	UPUB	5	Robert S. Apgood Et Al, Appellant's V. Roger A. Plautz Et Al, Respondent's
+861646	03/13/2024	03/18/2024	No	UPUB	5	Rebekah Guitar, Appellant V. Olympia Orthopaedic Associates, Pllc, Et Al., Respondents
+859048	01/24/2024	03/11/2024	Yes	PIP	47	* Sound Ford Inc., Appellant V. Central Puget Sound Regional Transit Author., Respondent
+852019	02/27/2024	03/11/2024	No	UPUB	13	State Of Washington, Respondent V. Lavell Demeatreous Lewis, Appellant
+843761	02/29/2024	03/11/2024	No	UPUB	11	Personal Restraint Petition Of Luis Andre Perez
+854585	02/29/2024	03/11/2024	No	UPUB	11	In Re The Raymond Clifford Hagen Credit Equivalent Trust
+844083	03/01/2024	03/11/2024	No	UPUB	10	In Re: Chad A. Schaefer, Appellant V. Heather M. Kier, Respondent
+853988	03/01/2024	03/11/2024	No	UPUB	10	"Leonard ""eric"" Olson, Appellant V. Joy Global Surface Mining, Inc., Et Al, Respondents"
+859226	03/01/2024	03/11/2024	No	UPUB	10	State Of Washington, Respondent V. Michael Eugene Norvell, Appellant
+845764	03/05/2024	03/11/2024	No	UPUB	6	State Of Washington, Respondent V. Alexander M. Emerson, Appellant
+850644	03/05/2024	03/11/2024	No	UPUB	6	Mezzanine Properties, Inc., Appellant V. Bkco Title And Escrow, Llc, Et Al., Respondents
+852809	03/06/2024	03/11/2024	No	UPUB	5	Steve Hailey, Appellant V. Wa State Executive Ethics Board, Respondent
+847864	03/06/2024	03/11/2024	No	UPUB	5	Kathryn C. Cox, Appellant. V. Charles A. Fulmer, Respondent
+844504	03/07/2024	03/11/2024	No	UPUB	4	Melvina Manning, Respondent V. Zackariah J. Bennett, Appellant
+850890	03/07/2024	03/11/2024	No	UPUB	4	Pcl Construction Services, Inc., Appellant V. Kenneth Green, Et Ano., Respondent
+844954	03/07/2024	03/11/2024	No	UPUB	4	State Of Washington, Respondent V. Lonnie William Jones, Appellant
+859056	01/09/2024	03/04/2024	Yes	UPUB	55	In Re The Personal Restraint Petition Of Kollin Lorik Folsom
+849000	01/10/2024	03/04/2024	Yes	UPUB	54	State Of Washington, Respondent V. Lloyd Edwin Richmond, Appellant
+853198	01/11/2024	03/04/2024	Yes	UPUB	53	Application Software Products, Inc., Appellant V. State Liquor And Cannabis, Respondent
+859013	01/18/2024	03/04/2024	No	UPUB	46	Eight Is Enough, Llc, Respondent V. Cynthia Ohlig, Appellant
+842048	01/25/2024	03/04/2024	Yes	UPUB	39	State Of Washington, Resp./cross-appellant V. Jose Leonard Colindres, App./cross-respondent
+848500	02/27/2024	03/04/2024	No	UPUB	6	In Re The Marriage Of: Naiba Sadat, Respondent And Sayed Inayet Sadat, Appellant
+854755	02/27/2024	03/04/2024	No	UPUB	6	Roy D. Cheesman, Appellant V. Ford Motor Company, Respondent
+846531	02/27/2024	03/04/2024	No	UPUB	6	State Of Washington, Res. V. Trevor James Dickey, App.
+852051	02/27/2024	03/04/2024	No	UPUB	6	2400 Elliott Llc, Respondent V. Vp Elite Construction Llc, Appellant
+848062	02/28/2024	03/04/2024	No	UPUB	5	Flex Funding Group Llc, Respondent V. Nathaniel Mazal, Appellant
+859188	02/28/2024	03/04/2024	No	PUB	5	* State Of Washington, Respondent V. Dustin Alan Griffin, Appellant
+859145	02/29/2024	03/04/2024	No	UPUB	4	Personal Restraint Petition Of: Kevin Lee Forler
+845624	02/29/2024	03/04/2024	No	UPUB	4	State Of Washington, Respondent V. Nathan Wood, Appellant
+851004	02/29/2024	03/04/2024	No	UPUB	4	Larry Campbell, App. V. At&t, Inc. And The Dept. Of Labor & Industries, Res.
+844806	01/10/2024	02/26/2024	Yes	UPUB	47	In Re: Brian Yorks, Respondent V. Olimpia Yorks, Appellant
+850318	01/10/2024	02/26/2024	Yes	PUB	47	* The Housing Authority Of The County Of King, App. V. Angela Knight, Et Al., Res.
+850971	01/24/2024	02/26/2024	Yes	UPUB	33	Keybank N.a. V. Henry Dean, Et Al.
+849778	01/09/2024	02/20/2024	Yes	UPUB	42	Windermere Real Estate/east, Inc., Appellant V. Sandra Forman, Et Al, Respondents
+856685	01/09/2024	02/20/2024	Yes	UPUB	42	State Of Washington, Respondent V. Herbert Dwayne Tiley, Appellant
+850148	01/10/2024	02/20/2024	Yes	UPUB	41	In Re Lada S. Mnatsakanova
+846108	01/12/2024	02/20/2024	Yes	UPUB	39	Danielle Labounty, Appellant V. Mount Baker School District No. 507, Respondent
+847287	01/25/2024	02/20/2024	Yes	UPUB	26	Donald J. Noble, Appellant V. Robert And Jane Doe Wolford, Respondents
+851071	01/09/2024	02/12/2024	Yes	UPUB	34	Aron English, Appellant V. Charcoal Creek Llc, Et Al., Respondents
+851829	01/11/2024	02/12/2024	Yes	UPUB	32	Jeffrey L. Cockrum, Et Ano, Appellants V. C.h. Murphy/clark-ullman, Inc., Respondents
+833138	01/11/2024	02/12/2024	Yes	UPUB	32	Personal Restraint Petition Of Say Sulin Keodara
+850903	01/17/2024	02/12/2024	Yes	UPUB	26	Coho Distributing Llc, Appellant V. State Of Wa, Dept. Of Revenue, Respondent
+853732	01/19/2024	02/12/2024	Yes	UPUB	24	The Estate Of Robert R. Parman
+839233	01/18/2024	02/05/2024	No	UPUB	18	Michelina De Simone, Respondent V. Winfred Donell Smith, Ii, Appellant
+846175	01/19/2024	02/05/2024	No	UPUB	17	State Of Washington, Respondent V. Ronelle Ashton Williams, Appellant
+859111	01/19/2024	02/05/2024	No	UPUB	17	Personal Restraint Petition Of: Michael Vasiliy Kolesnik
+859005	01/23/2024	02/05/2024	No	UPUB	13	Personal Restraint Petition Of: David Wayne Evans
+842901	01/25/2024	02/05/2024	No	UPUB	11	In Re The Marriage Of Andrea Ursula Carruthers, Respondent V. Stephen Carruthers, Appellant
+859021	01/25/2024	02/05/2024	No	UPUB	11	State Of Washington, Respondent V. Marvin Lofi Leo, Appellant
+842218	01/25/2024	02/05/2024	No	UPUB	11	State Of Washington, Respondent V. Abdikadir A. Khalif, Appellant
+848071	01/09/2024	01/29/2024	No	UPUB	20	State Of Washington, Respondent V. Dechas Blue, Appellant
+858998	01/18/2024	01/29/2024	No	UPUB	11	Personal Restraint Petition Of: Joseph A Campbell
+859072	01/18/2024	01/29/2024	No	UPUB	11	Personal Restraint Petition Of: Michael Dashawn Stevenson, Jr
+847651	01/18/2024	01/29/2024	No	UPUB	11	Personal Restraint Petition Of Rene Phillip Dallas
+856693	01/19/2024	01/29/2024	No	UPUB	10	Rachael Laureen Goldberg, Et Ano., Respondents V. Jennifer Allen, Appellant
+828690	01/23/2024	01/29/2024	No	UPUB	6	State Of Washington, Respondent V. Vanessa Valdiglesias Lavalle, Appellant
+850369	01/23/2024	01/29/2024	No	UPUB	6	In Re The Detention Of: L.a.t.
+841815	01/23/2024	01/29/2024	No	UPUB	6	State Of Washington, Respondent V. Anthony Johnson, Appellant
+859200	01/24/2024	01/29/2024	No	UPUB	5	State Of Washington, Respondent V. Tyler James Autry, Appellant
+859081	01/24/2024	01/29/2024	No	UPUB	5	State Of Washington, Respondent V. M.w., Appellant
+859099	01/24/2024	01/29/2024	No	UPUB	5	John Doe P, Et Al. V. Thurston County And Donna & Jeff Zink, Appellants
+850105	01/09/2024	01/22/2024	Yes	UPUB	13	Amy Biggs, Appellant V. Puget Sound Energy, Inc., Respondent
+843303	01/10/2024	01/22/2024	No	UPUB	12	State Of Washington, Respondent V. Soren Richard Olsen, Ii, Appellant
+851772	01/11/2024	01/22/2024	No	UPUB	11	Teri Collier, Appellant V. Wa State Dept Of Health Nursing Comm., Respondent
+858963	01/11/2024	01/22/2024	No	UPUB	11	State Of Washington, Respondent V. William Fredyrick Dahn, Appellant
+847767	01/12/2024	01/22/2024	No	UPUB	10	State Of Washington, Respondent V. Connor William Daniels, Appellant
+859102	01/12/2024	01/22/2024	No	UPUB	10	State Of Washington, Respondent V Christopher E. Mastin, Appellant
+850164	01/12/2024	01/22/2024	No	UPUB	10	In Re The Detention Of C-h.g.
+853449	01/17/2024	01/22/2024	No	UPUB	5	Personal Restraint Petition Of: Gail Brashear
+847996	01/17/2024	01/22/2024	No	UPUB	5	Joshua Mckinney, Appellant V. Christine Booker, Respondent
+856839	01/17/2024	01/22/2024	No	UPUB	5	Personal Restraint Petition Of: Kenneth Robert Aronson
+849387	01/17/2024	01/22/2024	No	UPUB	5	In The Interest Of: A.s.a.
+844644	01/09/2024	01/16/2024	No	UPUB	7	In Re: Tony Balevski, Respondent V. Aleksandra Danilov, Appellant
+859218	01/10/2024	01/16/2024	No	UPUB	6	In Re The Detention Of: M.y.
+859137	01/10/2024	01/16/2024	No	UPUB	6	State Of Washington, Respondent V. Anrio D. Adams, Sr., Appellant
+859064	01/11/2024	01/16/2024	No	UPUB	5	In Re The Personal Restraint Petition Of Donald R. Betts
