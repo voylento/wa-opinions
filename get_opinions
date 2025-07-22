@@ -1,0 +1,128 @@
+#!/usr/bin/env python3
+
+import sys
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import Select
+from selenium.common.exceptions import NoSuchElementException
+from datetime import datetime
+from dat import opiniondates
+import time
+import re
+import csv
+
+results = []
+opinions_url = "https://www.courts.wa.gov/opinions/" 
+
+def get_opinions_for_date_range(driver, date_range_start, date_range_end):
+    global results
+    global opinions_url
+
+    driver.get(opinions_url)
+
+    court_level = Select(driver.find_element(By.NAME, "courtLevel"))
+    court_level.select_by_visible_text("Court of Appeals Only")
+
+    begin_date = driver.find_element(By.NAME, "beginDate")
+    begin_date.send_keys(date_range_start)
+
+    end_date = driver.find_element(By.NAME, "endDate")
+    end_date.send_keys(date_range_end)
+
+    search_button = driver.find_element(By.CSS_SELECTOR, "input[type='submit']")
+    search_button.click()
+
+    driver.implicitly_wait(1)
+
+    group_header = "Court of Appeals Opinions"
+
+    # Sadly, there are no ids or other elements that make it easy to grab the information
+    # desired. Must use XPATH.
+    h3_element = driver.find_element(By.XPATH, "//h3[contains(text(), 'Court of Appeals Opinions')]")
+
+    # The webpage normally has 3 tables, in the following order: Opinions Published in Part,
+    # Published Opinions, and Unpublished Opinions. There are no identifiers in the html to 
+    # directly access those tables. However, they are all preceded by a table header in the format:
+    # <p><strong>Table Name</strong></p>, where Table Name is "Opinions Published in Part", "Published
+    # Opinions", or "Unpublished Opinions". Our XPATH uses the <p><strong></strong><p> elements
+    # to find the tables
+    p_elements = h3_element.find_elements(By.XPATH, "following-sibling::p[strong]")
+
+    for p_element in p_elements:
+        opinion_type = p_element.find_element(By.XPATH, ".//strong").text.strip()
+    
+        tables = p_element.find_elements(By.XPATH, "following-sibling::table[1]")
+
+        # there are some p_elements that get captured by our xpath that are not the ones we want. We can tell
+        # which they are because they are not followed by a table
+        if len(tables) == 0:
+            continue
+
+        table = tables[0]
+
+        #Extract all rows except the table header row
+        rows = table.find_elements(By.XPATH, ".//tr[position() > 1]")
+
+        for row in rows:
+            cells = row.find_elements(By.TAG_NAME, "td")
+            if len(cells) >= 5: # Ensure the right number of columns exist
+                filing_date = cells[0].text
+                # If it is the header row, continue
+                if filing_date == "File Date":
+                    continue
+
+                case_info = cells[1].text
+                division = cells[2].text
+                case_title = cells[3].text
+
+                #print(f"{filing_date} {division} {case_title}")
+
+                try:
+                    # Parse the date string (handles "Jan. 25, 2025" format)
+                    parsed_date = datetime.strptime(filing_date, "%b. %d, %Y")
+                    
+                    # Convert to desired format mm/dd/yyyy
+                    file_date = parsed_date.strftime("%m/%d/%Y")
+                except ValueError:
+                    # Keep original date string if parsing fails
+                    print(f"Error parsing date for {filing_date}")
+                    pass
+                    
+                if opinion_type == "Opinions Published in Part":
+                    opinion_TLA = "PIP"
+                elif opinion_type == "Published Opinions":
+                    opinion_TLA = "PUB"
+                elif opinion_type == "Unpublished Opinions":
+                    opinion_TLA = "UPUB"
+
+                case_num = re.sub(r"\D", "", case_info.rstrip())
+                appellate_div = division.rstrip()
+                if appellate_div== "I":
+                    results.append(
+                            [
+                             file_date.rstrip(),
+                             case_num,
+                             appellate_div,
+                             opinion_TLA,
+                             f"{case_title.rstrip()}"
+                            ])
+
+def write_opinions_to_stdout(data):
+    data_sorted = sorted(data, key=lambda x: datetime.strptime(x[0], "%m/%d/%Y"))
+    writer = csv.writer(sys.stdout, delimiter='\t', lineterminator='\n')
+    writer.writerows(data_sorted)
+
+def main():
+    global results
+
+    driver = webdriver.Chrome()
+    # The opinions website is limited to 200 results. Thus, we query for
+    # one month at a time. Max I've seen for a month is around 120 results
+    for date_range in opiniondates.date_groups:
+        get_opinions_for_date_range(driver, date_range["begin"], date_range["end"])
+
+    driver.quit()
+    write_opinions_to_stdout(results)
+
+if __name__ == '__main__':
+    main()

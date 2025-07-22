@@ -1,0 +1,264 @@
+#!/usr/bin/env python3
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import Select
+from datetime import datetime
+from dat import paneldates
+import csv
+import sys
+import re
+import time
+
+# This program loops through a subset of the Washington State Court of Appeals, Division 1, hearing schedule
+# for 2024 and 2025, captures the information I'm interested in, and writes the information to standard output.
+# The link to the 2024 and 2025 docket archive is here:
+#
+# https://www.courts.wa.gov/appellate_trial_courts/appellateDockets/index.cfm?fa=appellateDockets.showDateList&courtId=a01&archive=y&yr1=2025&yr2=2024
+#
+# Since I am only interested in a subset of the docket, I did not write code to traverse all the links in the 
+# docket. Instead, I pasted links to the specific days' dockets I am interested in. If I decide I want more days'
+# worth, I'll copy them to the oral_arguments array.
+#
+# For each day's docket, I pull out:
+# - Case Number (Anchor case and consolidated cases if relevant)
+# - Date of Consideration (I refer to this as oral arguments, but not all cases have oral arguments)
+# - Whether the case has Oral argument or not
+# - The judicial panel hearing the case (or considering it if no oral argument)
+# - The case title
+#
+
+# The three links below encapsulate the variety of html layouts I've seen, so use them as test cases when
+
+
+def process_page(index, lines, argument_date, panel):
+    """ 
+        Processes the content looking for case information. There are 7 patterns we must be aware of:
+        1. Case #, Title
+        2. Case #, County Court, Title
+        3. Case # (Anchor Case), Case # (Consolidated Case)+ 
+        4. Case # (Anchor Case), County Court, Case # (Consolidated Case)+
+        5. Panel, followed by one of patterns 1-4
+        6. No Oral Argument, followed by one of patterns 1-4
+        7. Panel, No Oral Argument, followed by one of patterns 1-4
+    """
+    # global cases
+    # global panel
+    # global is_oral_argument
+
+    cases = []
+    is_oral_argument = True
+
+    while index < len(lines):
+        line = lines[index]
+        if is_case_number(line):
+            new_index, case = process_case(index, lines, argument_date, panel, is_oral_argument)
+            cases.append(case)
+            is_oral_argument = True # if case num if 1st in sequence, then there are oral arguments
+            index = new_index
+        elif is_no_oral_argument(line):
+            is_oral_argument = False # if no oral arguments, that always listed before case #
+            index += 1
+        elif is_panel(line):
+            panel = extract_panel(line) # if panel changes during day, that is noted before the case at which it changes
+            index += 1                  # Also, I assume it lasts rest of day or until another noted panel change
+        else:
+            index += 1 # skip over lines that don't start a new case sequence
+
+    return cases
+
+def process_case(index, lines, argument_date, panel, is_oral_argument):
+    # Assumes that this is called when index points to a case number on the page
+
+    # global argument_date
+    # global panel
+    # global is_oral_argument
+
+    case_numbers = []
+    line = lines[index];
+    is_combined = is_combined_case(line)
+
+    case_numbers.append(extract_case_number(line))
+    index = index + 1
+
+    # if it is a combined case, the first case listed is the anchor case and the cases listed
+    # after are the cases consolidated into the anchor case
+    if is_combined:
+        line = lines[index]
+        if is_county_court_field(line):
+            index = index + 1
+            line = lines[index]
+        while is_case_number(line):
+            case_numbers.append(extract_case_number(line))
+            index = index + 1
+            line = lines[index]
+    else:
+        line = lines[index]
+        if is_county_court_field(line):
+            index = index + 1
+            line = lines[index]
+
+    title = lines[index]
+
+    case_data = {
+        "case_numbers": case_numbers,
+        "case_title": title,
+        "argument_date": argument_date,
+        "panel": ",".join(panel),
+        "oral_argument": "Yes" if is_oral_argument else "No"
+        }
+    
+    return index + 1, case_data
+
+def extract_title(line):
+    return line.strip()
+
+def is_argument_date(line):
+    if line[:5] == "Date:":
+        return True
+    else:
+        return False
+    
+def extract_date(line):
+    # Extract date from a field in the format: "Date: Thursday, September 10, 2024"
+    if "Date: " in line:
+        line = line.split("Date: ")[1].strip()
+
+    date_obj = datetime.strptime(line, "%A, %B %d, %Y").date()
+    return date_obj.strftime("%m/%d/%Y")
+
+def is_panel(line):
+    if line[:7] == "Panel: ":
+        return True
+    else:
+        return False
+
+def extract_panel(line):
+    name_part = line.split("Panel: ")[1].strip()
+    panel = name_part.split(",")
+    return panel
+
+def is_case_number(line):
+    data = line.strip()
+    if len(data) < 6:
+        return False  # case numbers have 6 digits, or 7 if the case number includes a '-' before last number
+
+    if data[:6].isdigit():
+        return True
+    if data[:5].isdigit() and data[5] == '-' and data[6].isdigit():
+        return True
+
+    return False
+
+def extract_case_number(line):
+    return re.sub(r"\D", "", line)
+
+def is_combined_case(line):
+    # Assumes field is a case # (without dash) and just checking if it ends with (Anchor Case)
+    if "Anchor Case" in line:
+        return True
+    return False 
+
+def is_consolidated_case(line):
+    # Assumes field is case # in format nnnnn-n and just checking if it ends with (Consolidated)
+    if "Consolidated" in line:
+        return True
+    return False
+
+def is_county_court_field(line):
+    if "Superior Court" in line:
+        return True
+    return False
+
+def is_no_oral_argument(line):
+    if "No Oral Argument" in line:
+        return True
+    return False
+
+def write_cases(report):
+    writer = csv.writer(sys.stdout, delimiter='\t')
+    writer.writerows(report) 
+    # for case in cases:
+    #     writer.writerow(f"{case["case_numbers"][0]}\t", end='')
+    #     writer.write(f"{case["argument_date"]}\t", end='')
+    #     writer.write(f"{case["oral_argument"]}\t", end='')
+    #     writer.write(f"{case["panel"]}\t", end='')
+    #     writer.write("\t\t", end='')
+    #     writer.write(f"{case["case_title"]},", end='')
+    #     writer.write("")
+
+def convert_cases_to_report(cases):
+    report = []
+
+    for case in cases:
+        line_item = [
+            case['case_numbers'][0],
+            case['argument_date'],
+            case['oral_argument'],
+            case['panel'],
+            case['case_title']
+        ]
+        report.append(line_item)
+        # if multiple case numbers, print the consolidated case numbers
+        # on their own line, with no other case data
+        if len(case['case_numbers']) > 1:
+            for num in range(1, len(case['case_numbers'])):
+                report.append([case['case_numbers'][num]])
+
+
+    return report
+
+def main():
+    all_cases = []
+    panel = []
+    argument_date = ''
+
+    driver = webdriver.Chrome()
+
+    for url in paneldates.panel_dates:
+        argument_date = None
+        panel = []
+        # The last 8 digits on the url are a date in yyyymmdd format. Check that the date is not after current date
+        driver.get(url)
+
+        # Sadly, a dearth of id attributes in the html.
+        # All fields I want to capture are inside a strong tag. Not all fields inside a strong tag are fields I want to capture
+        strong_elements = driver.find_elements(By.TAG_NAME, "strong")
+        lines = [element.text.strip() for element in strong_elements]
+
+        index = 0
+        num_lines = len(lines)
+
+        # The header section of the page gives the date and day's judicial panel before listing
+        # case details. Get that first.
+        # Note: panels can change throughout the day and such changes are noted, but that is in the case data
+        while len(panel) == 0 and index < num_lines:
+            line = lines[index].strip()
+
+            # have the content, increase index for next round, or for when we break
+            index += 1 
+
+            # argument date is first field we're interested in from the web page. read until we get it
+            if argument_date == None:
+                if is_argument_date(line):
+                    argument_date = extract_date(line)
+                    continue # No need for more processing on this field
+                else:
+                    continue # Keep going until we get to Date for appeals argument
+
+            # panel is the next field we're interested in from the web page. read until we get it
+            if len(panel) == 0:
+                if (is_panel(line)):
+                    panel = extract_panel(line)
+                    break   # once we have the panel, we can break out of the while loop
+                            # to process the actual cases argued on this date
+
+        # Now that we have the date and the judicial panel, get the actual cases
+        cases = process_page(index, lines, argument_date, panel)
+        all_cases.extend(cases)
+            
+    driver.quit()
+    report = convert_cases_to_report(all_cases)
+    write_cases(report)
+
+if __name__ == "__main__":
+    main()

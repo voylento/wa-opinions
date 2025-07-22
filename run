@@ -1,0 +1,15 @@
+#!/bin/bash
+source venv/bin/activate
+./get_argument_dates > schedule.txt
+./get_opinions > opinions.txt
+./reconcile.py schedule.txt opinions.txt > cases_decided.txt
+deactivate
+./get_stats cases_decided.txt > stats.txt
+./to_html.py cases_decided.txt stats.txt cases_decided.html
+awk 'NF > 1 {print $1}' schedule.txt > cases_argued.txt
+grep -vf <(awk '{print $1}' cases_decided.txt | sort -u) <(sort -u cases_argued.txt) > missing_opinions.txt
+grep -f missing_opinions.txt schedule.txt > cases_waiting.txt
+./missing_to_html.py cases_waiting.txt cases_waiting.html
+rm schedule.txt opinions.txt cases_decided.txt stats.txt cases_argued.txt missing_opinions.txt cases_waiting.txt
+open cases_decided.html
+open cases_waiting.html
