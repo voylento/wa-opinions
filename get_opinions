@@ -4,6 +4,7 @@ import sys
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
+from selenium.webdriver.chrome.options import Options
 from selenium.common.exceptions import NoSuchElementException
 from datetime import datetime
 from dat import opiniondates
@@ -115,10 +116,15 @@ def write_opinions_to_stdout(data):
 def main():
     global results
 
-    driver = webdriver.Chrome()
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--disable-images")
+    driver = webdriver.Chrome(options=chrome_options)
+
     # The opinions website is limited to 200 results. Thus, we query for
     # one month at a time. Max I've seen for a month is around 120 results
     for date_range in opiniondates.date_groups:
+        print(f'Getting opinions from {date_range["begin"]} to {date_range["end"]}', file=sys.stderr)
         get_opinions_for_date_range(driver, date_range["begin"], date_range["end"])
 
     driver.quit()

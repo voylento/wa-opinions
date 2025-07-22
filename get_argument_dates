@@ -2,6 +2,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
+from selenium.webdriver.chrome.options import Options
 from datetime import datetime
 from dat import paneldates
 import csv
@@ -212,12 +213,17 @@ def main():
     panel = []
     argument_date = ''
 
-    driver = webdriver.Chrome()
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--disable-images")
+    driver = webdriver.Chrome(options=chrome_options)
+
+    print('working...this may take a few minutes...', file=sys.stderr)
 
     for url in paneldates.panel_dates:
         argument_date = None
         panel = []
-        # The last 8 digits on the url are a date in yyyymmdd format. Check that the date is not after current date
+
         driver.get(url)
 
         # Sadly, a dearth of id attributes in the html.
