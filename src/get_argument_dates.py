@@ -220,7 +220,7 @@ def main():
         print(f"processing {url}", file=sys.stderr)
         argument_date = None
         panel = []
-        # The last 8 digits on the url are a date in yyyymmdd format. Check that the date is not after current date
+
         driver.get(url)
 
         # Sadly, a dearth of id attributes in the html.
@@ -262,6 +262,6 @@ def main():
     driver.quit()
     report = convert_cases_to_report(all_cases)
     write_cases(report)
-    print("\n✅ Successfully retrieved case argument dates.", file=sys.stderr)
+    print("✅ Successfully retrieved case argument dates.\n", file=sys.stderr)
 if __name__ == "__main__":
     main()

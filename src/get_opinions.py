@@ -7,6 +7,7 @@ from driver_factory import create_driver
 import re
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
+from selenium.webdriver.chrome.options import Options
 from selenium.common.exceptions import NoSuchElementException
 import sys
 import time
@@ -126,7 +127,7 @@ def main():
 
     driver.quit()
     write_opinions_to_stdout(results)
-    print("\n✅ Successfully retrieved opinions.", file=sys.stderr)
+    print("✅ Successfully retrieved opinions.\n", file=sys.stderr)
 
 if __name__ == '__main__':
     main()
