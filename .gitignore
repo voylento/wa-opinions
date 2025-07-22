@@ -1,5 +1,8 @@
 .git
 __pycache__/
+cases_decided.html
+cases_waiting.html
+cft/
 deploy.sh
 deployment/
 venv
