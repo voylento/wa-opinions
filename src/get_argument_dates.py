@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-from selenium import webdriver
+import csv
+from dat import paneldates
+from datetime import datetime
+from driver_factory import create_driver
+import os
+import re
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
-from datetime import datetime
-from dat import paneldates
-import csv
 import sys
-import re
 import time
 
 # This program loops through a subset of the Washington State Court of Appeals, Division 1, hearing schedule
@@ -212,9 +213,11 @@ def main():
     panel = []
     argument_date = ''
 
-    driver = webdriver.Chrome()
+    # Directory of *this script*
+    driver = create_driver()
 
     for url in paneldates.panel_dates:
+        print(f"processing {url}", file=sys.stderr)
         argument_date = None
         panel = []
         # The last 8 digits on the url are a date in yyyymmdd format. Check that the date is not after current date
@@ -259,6 +262,6 @@ def main():
     driver.quit()
     report = convert_cases_to_report(all_cases)
     write_cases(report)
-
+    print("\n✅ Successfully retrieved case argument dates.", file=sys.stderr)
 if __name__ == "__main__":
     main()

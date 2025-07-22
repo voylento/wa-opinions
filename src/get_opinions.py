@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 
-import sys
-from selenium import webdriver
+import csv
+from dat import opiniondates
+from datetime import datetime
+from driver_factory import create_driver
+import re
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException
-from datetime import datetime
-from dat import opiniondates
+import sys
 import time
-import re
-import csv
 
 results = []
 opinions_url = "https://www.courts.wa.gov/opinions/" 
@@ -115,14 +115,18 @@ def write_opinions_to_stdout(data):
 def main():
     global results
 
-    driver = webdriver.Chrome()
+    driver = create_driver()
     # The opinions website is limited to 200 results. Thus, we query for
     # one month at a time. Max I've seen for a month is around 120 results
     for date_range in opiniondates.date_groups:
+        begin_date = date_range["begin"]
+        end_date = date_range["end"]
+        print(f"Getting opinions between {begin_date} and {end_date}...", file=sys.stderr)
         get_opinions_for_date_range(driver, date_range["begin"], date_range["end"])
 
     driver.quit()
     write_opinions_to_stdout(results)
+    print("\n✅ Successfully retrieved opinions.", file=sys.stderr)
 
 if __name__ == '__main__':
     main()
