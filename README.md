@@ -1,7 +1,20 @@
-# opinions
-- Tool to get information on docket for Washington State Court of Appeals, Division 1
+# WA-Opinions
+Tool to get information on appellate cases before the Washington State Court of Appeals, Division 1
+
+## Motivation
+I became interested in following appellate court cases in Washington. In particular, I enjoy reading the opinions that get released. Beyond that, I am interested in seeing how long it takes the appellate court to process cases from between the time the assigned appellate court panel considers a case and the time they release an opinion. Pulling that information together is very tedious so I wrote some Python scripts to do it for me. These scripts create an html file for for cases that have an opinion released (cases_decided.html) and another html file (cases_waiting.html) for cases that are still waiting for an opinion. This program is run weekly and the files are uploaded to [Voylento.com -- cases_decided.html](https://voylento.com/cases_decided.html) and [Voylento.com -- cases_waiting.html](https://voylento.com/cases_waiting.html). 
+
+## Dependencies
+This project uses Selenium web driver and Chrome for Testing. As of this check in, only macOS amd64 is supported. Support for Windows (WLS/2) and Ubuntu are on the roadmap.
+
 
 ## Setup
+First, install Chrome for Testing and the corresponding Selenium web driver:
+```bash
+python3 setup_cft.py
+```
+
+That should install the Chrome for Testing and Selenium web driver in the cft subdirectory. After that, install the Python dependencies:
 ```bash
 python -m venv venv
 source venv/bin/activate
@@ -9,54 +22,11 @@ pip install -r requirements.txt
 deactivate
 ```
 
-## NOTE
-This project uses Selenium Chrome driver to open Chrome and navigate the pages. Chrome must be installed on the machine and the selenium driver and chrome version must match.
-
-## Get the Oral Arguments Schedule
-```bash
-source venv/bin/activate
-./get_argument_dates >  schedule.txt
-deactivate
-```
-
-## Get the Opinions
-```bash
-source venv/bin/activate
-./get_opinions > opinions.txt
-deactivate
-```
-
-## Reconcile cases schedule against opinions to create cases decided report
-```bash
-source venv/bin/activate
-./reconcile.py schedule.txt opinions.txt > cases_decided.txt
-deactivate
-```
-
-## Aggregate stats from cases_decided report
-```bash
-./get_stats cases_decided.txt > stats.txt
-```
-
-## Consolidate cases decided report and stats into html page
-```bash
-./to_html.py cases_decided.txt stats.txt > cases_decided.html
-```
-
-## Create report showing cases considered and still awaiting an opinion
-```bash
-awk 'NF > 1 {print  $1}' schedule.txt > cases_argued.txt
-grep -vf <(awk '{print $1}' cases_decided.txt | sort -u) <(sort -u cases_argued.txt) missing_opinions.txt
-grep -f missing_opinions.txt schedule.txt > cases_waiting.txt
-./missing_to_html.py cases_waiting.txt > cases_waiting.html
-```
-
-## Remove intermediary files
-```bash
-rm schedule.txt opinions.txt cases_decided.txt stats.txt cases_argued.txt missing_opinions.txt cases_waiting.txt
-```
-
-## Do all the steps above (less Setup) and open the html reports
-```bash
+## Run
+```base
 ./run
 ```
+
+`run` is a bash script that runs a series of Python scripts and coreutils to download information about cases and then processe the data into two reports: cases_decided.html and cases_waiting.html
+
+To run isolated parts of the process, look at the `run` shell program to see how it is stitched together.
