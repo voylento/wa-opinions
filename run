@@ -11,5 +11,4 @@ grep -vf <(awk '{print $1}' cases_decided.txt | sort -u) <(sort -u cases_argued.
 grep -f missing_opinions.txt schedule.txt > cases_waiting.txt
 ./src/missing_to_html.py cases_waiting.txt cases_waiting.html
 rm schedule.txt opinions.txt cases_decided.txt stats.txt cases_argued.txt missing_opinions.txt cases_waiting.txt
-open cases_decided.html
-open cases_waiting.html
+echo "created cases_decided.html and cases_missing.html"
