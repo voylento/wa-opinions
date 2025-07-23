@@ -8,15 +8,13 @@ I once saw a news article referring to an appellate court opinion. I looked up t
 
 As I learned more about our court system in Washington, I became more curious about how long cases take to wind through the appellate court system. Tracking that information is tedious so I decided to write some scripts to help me pull it all together. This project does that for me. For now, this code creates html reports that track when cases are scheduled for consideration before an appellate panel, when opinions are released, and a few other pieces of information. The report also includes links to the public opinions. This is a work in progress.
 
-These scripts generate:
-- **cases_decided.html** – cases with released opinions
-- **cases_waiting.html** – cases that have been before an appellate panel and are still awaiting an opinion
+## Quickstart
+Don't clone, don't install, don't build. I publish these reports weekly on my website. Go there to see the reports that get generated:
 
-I run this weekly and the results are uploaded to:
-- [Voylento.com — cases_decided.html](https://voylento.com/cases_decided.html)
-- [Voylento.com — cases_waiting.html](https://voylento.com/cases_waiting.html)
+- [Cases with opinion](https://voylento.com/cases_decided.html)
+- [Cases awaiting opinion](https://voylento.com/cases_waiting.html)
 
-As of now, this only tracks Division 1. Other divisions will be added.
+As of now, this only tracks Division 1. Other divisions, as well as additional information and capabilities, are on the, ahem, docket.
 
 ## Supported Platforms
 ✅ macOS (arm64) — tested  
