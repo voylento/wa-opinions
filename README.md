@@ -80,7 +80,7 @@ This runs a series of Python scripts and coreutils to:
 ## Running individual parts
 To run isolated parts of the process, inspect the `run` shell script. It shows how the various Python scripts are stitched together.
 
-## Contributions
+## Contributing
 I'm not taking contributions at this time as there are a number of core design and capability changes I intend to make.
 
 ## License
