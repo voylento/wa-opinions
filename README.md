@@ -78,8 +78,5 @@ This runs a series of Python scripts and coreutils to:
 ## Running individual parts
 To run isolated parts of the process, inspect the `run` shell script. It shows how the various Python scripts are stitched together.
 
-## Contributing
-Pull requests are welcome. If you’d like to help add support for other platforms or features, feel free to open an issue or fork the project.
-
 ## License
 MIT License.
