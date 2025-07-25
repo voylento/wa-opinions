@@ -3,6 +3,10 @@ __pycache__/
 cases_decided.html
 cases_waiting.html
 cft/
+data/
 deploy.sh
 deployment/
+logs/
+output/
+src/dat/
 venv

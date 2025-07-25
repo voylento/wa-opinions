@@ -1,8 +1,8 @@
 #!/bin/bash
 source venv/bin/activate
-./src/get_argument_dates.py > schedule.txt
-./src/get_opinions.py > opinions.txt
-./src/reconcile.py schedule.txt opinions.txt > cases_decided.txt
+./src/get_argument_dates.py 
+./src/get_opinions.py 
+./src/reconcile.py output/case_dates.txt output/opinions.txt > output/cases_decided.txt
 deactivate
 ./src/get_stats.py cases_decided.txt > stats.txt
 ./src/to_html.py cases_decided.txt stats.txt cases_decided.html
@@ -10,5 +10,4 @@ awk 'NF > 1 {print $1}' schedule.txt > cases_argued.txt
 grep -vf <(awk '{print $1}' cases_decided.txt | sort -u) <(sort -u cases_argued.txt) > missing_opinions.txt
 grep -f missing_opinions.txt schedule.txt > cases_waiting.txt
 ./src/missing_to_html.py cases_waiting.txt cases_waiting.html
-rm schedule.txt opinions.txt cases_decided.txt stats.txt cases_argued.txt missing_opinions.txt cases_waiting.txt
 echo "created cases_decided.html and cases_missing.html"

@@ -4,6 +4,7 @@ import csv
 from dat import opiniondates
 from datetime import datetime
 from driver_factory import create_driver
+import os
 import re
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
@@ -14,6 +15,10 @@ import time
 
 results = []
 opinions_url = "https://www.courts.wa.gov/opinions/" 
+
+OUTPUT_DIR = "output"
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+output_filename = os.path.join(OUTPUT_DIR, "opinions.tsv")
 
 def get_opinions_for_date_range(driver, date_range_start, date_range_end):
     global results
@@ -108,10 +113,11 @@ def get_opinions_for_date_range(driver, date_range_start, date_range_end):
                              f"{case_title.rstrip()}"
                             ])
 
-def write_opinions_to_stdout(data):
+def write_opinions_to_file(data, filepath):
     data_sorted = sorted(data, key=lambda x: datetime.strptime(x[0], "%m/%d/%Y"))
-    writer = csv.writer(sys.stdout, delimiter='\t', lineterminator='\n')
-    writer.writerows(data_sorted)
+    with open(filepath, "w", newline='', encoding="utf-8") as f:
+        writer = csv.writer(f, delimiter='\t')
+        writer.writerows(data_sorted)
 
 def main():
     global results
@@ -126,7 +132,7 @@ def main():
         get_opinions_for_date_range(driver, date_range["begin"], date_range["end"])
 
     driver.quit()
-    write_opinions_to_stdout(results)
+    write_opinions_to_file(results, output_filename)
     print("✅ Successfully retrieved opinions.\n", file=sys.stderr)
 
 if __name__ == '__main__':
