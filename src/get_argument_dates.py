@@ -18,6 +18,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 
 # Local imports
+from date_utils import date1_less_than_date2, get_next_date, last_date_of_current_month, last_day_of_current_year 
 from db_ops import get_connection, close_connection, update_metadata, insert_case_with_details
 from driver_factory import create_driver
 
@@ -87,45 +88,6 @@ class CaseData:
     # future proof fields I can add later
     lower_court: str = ""
     lower_court_case_number: str = ""
-
-def date1_less_than_date2(date1: str, date2: str) -> bool:
-    d1 = datetime.strptime(date1, "%Y%m%d")
-    d2 = datetime.strptime(date2, "%Y%m%d")
-    return d1 < d2
-
-def get_next_date(d: str) -> str:
-    """
-        Input: date string in the format yyyymmdd
-        Output: day after the input date in yyyymmdd format
-    """
-
-    # Parse incoming date string
-    dt = datetime.strptime(d, "%Y%m%d")
-    # Add one day
-    next_dt = dt + timedelta(days=1)
-    # Return in the same format
-    return next_dt.strftime("%Y%m%d")
-
-def last_date_of_current_month() -> str:
-    today = date.today()
-    year = today.year
-    month = today.month
-    last_day = calendar.monthrange(year, month)[1]
-    last_date = date(year, month, last_day)
-
-    return last_date.strftime("%Y%m%d")
-
-def last_day_of_next_month() -> date:
-    today = date.today()
-    first_next = (today.replace(day=1) + relativedelta(months=1))
-    first_after = (first_next + relativedelta(months=1))
-    return first_after - timedelta(days=1)
-
-def last_day_of_current_year() -> date:
-    today = date.today()
-    # last day of current year is always 12/31, duh
-    last_day = date(today.year, 12, 31)
-    return last_day
 
 def process_page(index, elements, argument_date, panel) -> list[CaseData]:
     """ 
@@ -402,6 +364,10 @@ def process_cases(driver, url, division, start_dt, end_dt):
         close_connection(conn)
 
 def parse_date_arg(arg_value: str) -> date:
+    """
+        Input: date as string in yyyymmdd format
+        Output: date object 
+    """
     try:
         return datetime.strptime(arg_value, "%Y-%m-%d").date()
     except ValueError:

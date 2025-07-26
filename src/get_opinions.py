@@ -1,17 +1,23 @@
 #!/usr/bin/env python3
 
+import argparse
+import calendar
 import csv
-from dat import opiniondates
-from datetime import datetime
-from driver_factory import create_driver
+from datetime import datetime, date
+import logging
 import os
 import re
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import Select
-from selenium.webdriver.chrome.options import Options
-from selenium.common.exceptions import NoSuchElementException
 import sys
 import time
+
+from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import Select
+
+from driver_factory import create_driver
+
+MIN_DATE = date(2013, 1, 1)
 
 results = []
 opinions_url = "https://www.courts.wa.gov/opinions/" 
@@ -20,7 +26,24 @@ OUTPUT_DIR = "output"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 output_filename = os.path.join(OUTPUT_DIR, "opinions.tsv")
 
-def get_opinions_for_date_range(driver, date_range_start, date_range_end):
+# Create a logs directory
+LOG_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "logs")
+os.makedirs(LOG_DIR, exist_ok=True)
+
+# Create a log filename with timestamp
+log_filename = datetime.now().strftime("opinion_scrape_%Y%m%d_%H%M%S.log")
+log_path = os.path.join(LOG_DIR, log_filename)
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    handlers=[
+        logging.FileHandler(log_path, mode='w', encoding='utf-8'),
+        logging.StreamHandler() # want a console log too
+    ]
+)
+
+def get_opinions_for_date_range(driver, begin_dt, end_dt):
     global results
     global opinions_url
 
@@ -30,10 +53,10 @@ def get_opinions_for_date_range(driver, date_range_start, date_range_end):
     court_level.select_by_visible_text("Court of Appeals Only")
 
     begin_date = driver.find_element(By.NAME, "beginDate")
-    begin_date.send_keys(date_range_start)
+    begin_date.send_keys(begin_dt)
 
     end_date = driver.find_element(By.NAME, "endDate")
-    end_date.send_keys(date_range_end)
+    end_date.send_keys(end_dt)
 
     search_button = driver.find_element(By.CSS_SELECTOR, "input[type='submit']")
     search_button.click()
@@ -91,7 +114,7 @@ def get_opinions_for_date_range(driver, date_range_start, date_range_end):
                     file_date = parsed_date.strftime("%m/%d/%Y")
                 except ValueError:
                     # Keep original date string if parsing fails
-                    print(f"Error parsing date for {filing_date}")
+                    logging.info(f"Error parsing date for {filing_date}")
                     pass
                     
                 if opinion_type == "Opinions Published in Part":
@@ -103,15 +126,14 @@ def get_opinions_for_date_range(driver, date_range_start, date_range_end):
 
                 case_num = re.sub(r"\D", "", case_info.rstrip())
                 appellate_div = division.rstrip()
-                if appellate_div== "I":
-                    results.append(
-                            [
-                             file_date.rstrip(),
-                             case_num,
-                             appellate_div,
-                             opinion_TLA,
-                             f"{case_title.rstrip()}"
-                            ])
+                results.append(
+                        [
+                         file_date.rstrip(),
+                         case_num,
+                         appellate_div,
+                         opinion_TLA,
+                         f"{case_title.rstrip()}"
+                        ])
 
 def write_opinions_to_file(data, filepath):
     data_sorted = sorted(data, key=lambda x: datetime.strptime(x[0], "%m/%d/%Y"))
@@ -119,21 +141,73 @@ def write_opinions_to_file(data, filepath):
         writer = csv.writer(f, delimiter='\t')
         writer.writerows(data_sorted)
 
+def generate_date_range_for_year(year: int) -> list[dict[str, str]]:
+    """
+        Input: a year 
+        Output: a list with an entry for each month that contains the first day
+                of the month and last day of the month in mm/dd/yyyy format
+    """
+    result = []
+    for month in range(1, 13):
+        _, last_day = calendar.monthrange(year, month)
+        begin_str = f"{month:02d}/01/{year}"
+        end_str = f"{month:02d}/{last_day:02d}/{year}"
+        result.append({"begin": begin_str, "end": end_str})
+    
+    return result
+
+def parse_year(arg_value: str) -> int:
+    try:
+        this_year = date.today().year
+        year = int(arg_value)
+        if year < 2012 or year > this_year:
+            raise argparse.ArgumentTypeError(
+                f"Year out of range: '{arg_value}'. Enter year between 2012 and {this_year}."
+            )
+        return year
+    except ValueError as e:
+        raise argparse.ArgumentTypeError(
+            f"Invalid year format: '{arg_value}'. Enter year between 2012 and {this_year}."
+        )
+
+def parse_args() -> str:
+    parser = argparse.ArgumentParser(
+        description="Scrape WA appellate opinion releases for a given year."
+    )
+    parser.add_argument(
+        "--year",
+        required=True,
+        type=parse_year,
+        help="Year for which to scrape opinion data (YYYY)"
+    )
+
+    args = parser.parse_args()
+    return args.year
+
 def main():
     global results
 
-    driver = create_driver()
-    # The opinions website is limited to 200 results. Thus, we query for
-    # one month at a time. Max I've seen for a month is around 120 results
-    for date_range in opiniondates.date_groups:
-        begin_date = date_range["begin"]
-        end_date = date_range["end"]
-        print(f"Getting opinions between {begin_date} and {end_date}...", file=sys.stderr)
-        get_opinions_for_date_range(driver, date_range["begin"], date_range["end"])
+    year = parse_args()
+    date_range = generate_date_range_for_year(year)
 
-    driver.quit()
-    write_opinions_to_file(results, output_filename)
-    print("✅ Successfully retrieved opinions.\n", file=sys.stderr)
+    try:
+        driver = create_driver()
+        
+        # The opinions website is limited to 200 results. Thus, we query for
+        # one month at a time. Max I've seen for a month is around 120 results
+        # for date_range in opiniondates.date_groups:
+        logging.info(f"Getting opinions for {year}...")
+        jan = date_range[0]
+        # for month in date_range:
+        get_opinions_for_date_range(driver, jan['begin'], jan['end'])
+        write_opinions_to_file(results, output_filename)
+    except Exception as e:
+        logging.exception(f"❌ Unhandled error: {e}")
+    finally:
+        driver.quit()
+
+    # write_opinions_to_file(results, output_filename)
+    logging.info("✅ Successfully retrieved opinions.")
 
 if __name__ == '__main__':
     main()
