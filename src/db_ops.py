@@ -64,7 +64,7 @@ def insert_case_with_details(
 
         # Insert into cases
         cur.execute("""
-            INSERT INTO cases
+            INSERT OR IGNORE INTO cases
             (division, case_title, panel_date, oral_arguments,
              opinion_date, opinion_publication_status, disposition_status,
              lower_court, lower_court_case_number, court_level, scraped_at)

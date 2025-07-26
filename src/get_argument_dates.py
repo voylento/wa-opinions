@@ -326,37 +326,6 @@ def is_no_oral_argument(line) -> bool:
         return True
     return False
 
-def write_cases(report, filename):
-    OUTPUT_DIR = "output"
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
-    filepath = os.path.join(OUTPUT_DIR, filename)
-    with open(filepath, "w", newline='', encoding="utf-8") as f:
-        writer = csv.writer(f, delimiter='\t')
-        writer.writerows(report)
-
-def convert_cases_to_report(cases):
-    report = []
-
-    for case in cases:
-        line_item = [
-            case['case_numbers'][0],
-            case['argument_date'],
-            case['oral_argument'],
-            case['panel'],
-            case['case_title'],
-            case['litigants'],
-            case['attorneys'],
-        ]
-        report.append(line_item)
-        # if multiple case numbers, print the consolidated case numbers
-        # on their own line, with no other case data
-        if len(case['case_numbers']) > 1:
-            for num in range(1, len(case['case_numbers'])):
-                report.append([case['case_numbers'][num]])
-
-
-    return report
-
 def write_cases_to_db(conn, div, cases):
     logging.info(f"Writing {len(cases)} cases for {cases[0].argument_date}")
 
