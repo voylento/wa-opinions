@@ -21,16 +21,20 @@ from driver_factory import create_driver
 # I'm interested in, and writes the information to a sqlite database. 
 #
 # For each day's schedule, I pull out:
-# - Case Number (Anchor case and consolidated cases if relevant)
-# - Date of Consideration (I sometimes refer to this as oral arguments in variable name, but not all cases have oral arguments)
+# - Case Number (Anchor case and consolidated cases if they exist)
+# - Date of Consideration (I sometimes refer to this as arguments date in variable name, but not all cases have oral arguments)
 # - Whether the case has Oral argument or not
-# - The judicial panel hearing the case (or considering it if no oral argument)
-# - The Superior Court from which the case was appealed and the case number (if present)
+# - The judicial panel considering the case
+# - The Superior Court from which the case was appealed and the Superior Court case number (if present)
 # - The case title
 # - The litigants
 # - The attorneys
+# -
+# - Having explored the data, I have found that not all cases that sit before a judicial panel for consideration, and have
+# - an opinion released, show up in the public-facing schedule cases. For the period 2012-2025, that amounts to 6% of the
+# - cases in Division 1, 5% in Division 2, and 3.5% in Division 3
 
-# - Only pages after 2011 are available publicly
+# - Oral argument (consideration) schedules only availbe for 2012 and later.
 MIN_DATE = date(2012, 1, 1)
 
 # Create a logs directory off the root of the project
@@ -125,16 +129,19 @@ def process_page(index: int, elements: list, argument_date: str, panel: list[str
 
 def extract_litigants_attorneys(index: int, elements: list) -> tuple[list[tuple[str, str]], list[str]]:
     """
-        Below is the stucture of the html that contains the litigant and attorney info. This example is pulled from the 1st case on the page
+        Below is the stucture of the html that contains the litigant and attorney info. This 
+        example is pulled from the 1st case on the page:
+
         https://www.courts.wa.gov/appellate_trial_courts/appellatedockets/index.cfm?fa=appellatedockets.showDocket&folder=a01&year=2013&file=20130225
 
-        Note that attorney names are listed on a per-litigant basis on the web page. I do not track that. I just track which attorneys
-        are associated with a case. This leads to duplicate entries, but they are filtered out at the db layer. See case 682539 on the link 
-        above to see what I mean.
+        Note that attorney names are listed on a per-litigant basis on the web page. I do not 
+        track that. I just track which attorneys are associated with a case. This leads to 
+        duplicate entries, but they are filtered out at the db layer. See case 682539 on the 
+        link above to see what I mean.
 
-        It is expected that when this function is called, elements[index] points to the first row 
-        in the table, which is the heading row. If it isn't, we don't know the structure we're 
-        dealing with so we return empty lists.
+        It is expected that when this function is called, elements[index] points to the first 
+        row in the table, which is the heading row. If it isn't, we don't know the structure 
+        we're dealing with so we return empty lists.
 
         <table width="80%" align="center">
 			<tr>
@@ -172,18 +179,21 @@ def extract_litigants_attorneys(index: int, elements: list) -> tuple[list[tuple[
             </tr>
 		</table>
     """
-    litigants: list[tuple[str, str]] = []  # I provide type info as much for the reader as for coding tools
+    litigants: list[tuple[str, str]] = [] 
     attorneys: list[str] = []
 
     target_table = None
     el = elements[index]
     text = el.text.strip()
     if text.startswith("Litigants"):
+        # Use XPath to find the parent table of this element so that
+        # the code can traverse the rows 
         target_table = el.find_element(By.XPATH, "./ancestor::table[1]")
 
     if target_table is not None:
+        # We have the table, loop through each row...
         rows = target_table.find_elements(By.TAG_NAME, "tr")
-        # loop through all the rows, skipping the header row
+        # ...but skip the header row.
         for row in rows[1:]:
             cols = row.find_elements(By.TAG_NAME, "td")
             # Every row should have 2 columns. 1st col is litigant, 2nd is attorney. If there aren't 
@@ -226,8 +236,6 @@ def process_case(index: int, elements: list, argument_date: str, panel: list[str
         https://www.courts.wa.gov/appellate_trial_courts/appellatedockets/index.cfm?fa=appellatedockets.showDocket&folder=a01&year=2013&file=20130225 
         for an example of case layouts within a page.
     """
-
-
     case_numbers: list[str] = []
     litigants: list[tuple[str, str]] = []
     attorneys: list[str] = []

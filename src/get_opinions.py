@@ -8,6 +8,7 @@ import logging
 import os
 import re
 
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.support.ui import Select
@@ -61,8 +62,11 @@ class Opinion:
     opinion_date: str
     opinion_type: str
 
-def update_opinions_in_db(opinions: list[Opinion]) -> None:
-    logging.info(f"Updating opinions for {len(opinions)} cases")
+def update_opinions_in_db(opinions: list[Opinion], begin_dt: str, end_dt: str) -> None:
+    if len(opinions) > 199:
+        logging.warning(f"⚠️ Warning! 200 opinions this month and website only returns 200 max. May be missing opinions.")
+    else:
+        logging.info(f"Updating opinions for {len(opinions)} cases for period {begin_dt} to {end_dt}")
     exception_count = 0
 
     conn = get_connection()
@@ -72,10 +76,10 @@ def update_opinions_in_db(opinions: list[Opinion]) -> None:
             try:
                 updated = update_case_opinion(conn, op.case_number, op.opinion_date, op.opinion_type)
                 if not updated:
-                    logging.warning(
-                        f"⚠️ No matching case found for opinion update: "
+                    logging.info(
+                        f"ℹ️ No matching case found for opinion update: "
                         f"{op.case_number} ({op.opinion_date}, {op.opinion_type}) "
-                        f"Attempting to insert as new case"
+                        f"Inserting as new case with incomplete information."
                     )
                     # I found some instances, espicially in cases over a decade ago, in which there are
                     # cases in the opinions release pages for which we never found a consideration date. 
@@ -134,6 +138,17 @@ def get_opinions_for_date_range(driver: WebDriver, begin_dt: str, end_dt: str) -
 
     # Sadly, there are no ids or other elements that make it easy to grab the information
     # desired. Must use XPATH.
+
+    # First, it is possible no search results were returned. Let's check for the first.
+    try:
+        element = driver.find_element(By.XPATH, "//*[contains(text(), 'No opinions matched the entered search criteria')]")
+        # There is text telling us there were no opinions for this date range. Log it and move on
+        logging.info(f"ℹ️ No opinions for the time period {begin_dt} to {end_dt}")
+        return
+    except NoSuchElementException:
+        # do nothing, just continue
+        pass
+
     h3_element = driver.find_element(By.XPATH, "//h3[contains(text(), 'Court of Appeals Opinions')]")
 
     # The webpage normally has 3 tables, in the following order: Opinions Published in Part,
@@ -177,7 +192,7 @@ def get_opinions_for_date_range(driver: WebDriver, begin_dt: str, end_dt: str) -
                     file_date = parsed_date.strftime("%m/%d/%Y")
                 except ValueError:
                     # Keep original date string if parsing fails
-                    logging.info(f"Error parsing date for {filing_date}")
+                    logging.error(f"Error parsing date for {filing_date}")
                     pass
                     
                 if opinion_type == "Opinions Published in Part":
@@ -208,20 +223,32 @@ def get_opinions_for_date_range(driver: WebDriver, begin_dt: str, end_dt: str) -
                     )
                 )
 
-    update_opinions_in_db(results)
+    update_opinions_in_db(results, begin_dt, end_dt)
 
 def generate_date_range_for_year(year: int) -> list[dict[str, str]]:
     """
         Input: a year 
         Output: a list with an entry for each month that contains the first day
                 of the month and last day of the month in mm/dd/yyyy format
+
+        NOTE: After running for 2013 through 2025 in late July 2025, I found a single 
+        month--April 2020--has 200 opinions. Since the site will only display up to 200, there may have been
+        more. I hard-coded a special case for April 2020.
     """
     result = []
     for month in range(1, 13):
         _, last_day = calendar.monthrange(year, month)
-        begin_str = f"{month:02d}/01/{year}"
-        end_str = f"{month:02d}/{last_day:02d}/{year}"
-        result.append({"begin": begin_str, "end": end_str})
+        if year == 2020 and month == 4:
+            begin_str = f"{month:02d}/01/{year}"
+            end_str = f"{month:02d}/15/{year}"
+            result.append({"begin": begin_str, "end": end_str})
+            begin_str = f"{month:02d}/16/{year}"
+            end_str = f"{month:02d}/30/{year}"
+            result.append({"begin": begin_str, "end": end_str})
+        else:
+            begin_str = f"{month:02d}/01/{year}"
+            end_str = f"{month:02d}/{last_day:02d}/{year}"
+            result.append({"begin": begin_str, "end": end_str})
     
     return result
 
