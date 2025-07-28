@@ -1,0 +1,24 @@
+{
+  "title": "Washington Appellate Court Cases",
+  "databases": {
+    "cases": {
+      "queries": {
+        "cases-by-attorney": {
+          "title": "Cases by Attorney",
+          "description": "Find all cases for a specific attorney with case details",
+          "sql": "SELECT cn.case_number, c.case_title, c.panel_date, c.opinion_date, a.name AS attorney_name, CASE WHEN c.opinion_date IS NOT NULL AND cn.is_primary = 1 THEN 'https://www.courts.wa.gov/opinions/index.cfm?fa=opinions.showOpinion&filename=' || cn.case_number || 'MAJ' ELSE NULL END AS opinion_link, CASE WHEN cn.is_primary = 1 THEN 'Primary' ELSE 'Consolidated' END AS case_status FROM attorneys a JOIN cases c ON c.id = a.case_id LEFT JOIN case_numbers cn ON cn.case_id = c.id WHERE a.name LIKE '%' || :attorney_name || '%' ORDER BY attorney_name, c.panel_date, cn.is_primary DESC;"
+        },
+        "cases-by-litigant": {
+          "title": "Cases by Litigant",
+          "description": "Find all cases for a specific litigant with case details",
+          "sql": "SELECT cn.case_number, c.case_title, c.panel_date, c.opinion_date, l.name AS litigant_name, CASE WHEN c.opinion_date IS NOT NULL AND cn.is_primary = 1 THEN 'https://www.courts.wa.gov/opinions/index.cfm?fa=opinions.showOpinion&filename=' || cn.case_number || 'MAJ' ELSE NULL END AS opinion_link, CASE WHEN cn.is_primary = 1 THEN 'Primary' ELSE 'Consolidated' END AS case_status FROM litigants l JOIN cases c ON c.id = l.case_id LEFT JOIN case_numbers cn ON cn.case_id = c.id WHERE l.name LIKE '%' || :litigant_name || '%' ORDER BY litigant_name, c.panel_date, cn.is_primary DESC;"
+        },
+		"opinions-by-date-range": {
+		  "title": "Opinions by Date Range",
+		  "description": "Find all cases with opinions released between two dates",
+		  "sql": "SELECT cn.case_number, c.case_title, c.opinion_date, c.opinion_publication_status, c.panel_date, c.division, CASE WHEN c.opinion_date IS NOT NULL AND cn.is_primary = 1 THEN 'https://www.courts.wa.gov/opinions/index.cfm?fa=opinions.showOpinion&filename=' || cn.case_number || 'MAJ' ELSE NULL END AS opinion_link, CASE WHEN cn.is_primary = 1 THEN 'Primary' ELSE 'Consolidated' END AS case_status FROM cases c LEFT JOIN case_numbers cn ON cn.case_id = c.id WHERE c.opinion_date IS NOT NULL AND c.opinion_date >= :start_date AND c.opinion_date <= :end_date ORDER BY c.opinion_date DESC, cn.is_primary DESC;"
+	    }
+      }
+    }
+  }
+}
