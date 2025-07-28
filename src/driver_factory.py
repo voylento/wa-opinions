@@ -1,10 +1,11 @@
 import os
 import platform
+from typing import Optional
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 
-def create_driver(project_root=None, headless=True):
+def create_driver(project_root: Optional[str] = None, headless: bool =True) -> webdriver.Chrome:
     # Resolve project root if not provided
     if project_root is None:
         # Assume this file is in root

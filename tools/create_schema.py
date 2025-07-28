@@ -68,11 +68,19 @@ CREATE TABLE IF NOT EXISTS judges (
 );
 """)
 
-# ----- NEW: metadata table -----
 cur.execute("""
 CREATE TABLE IF NOT EXISTS metadata (
     key TEXT PRIMARY KEY,
     value TEXT
+);
+""")
+
+cur.execute("""
+CREATE TABLE IF NOT EXISTS opinions_metadata (
+    year INTEGER NOT NULL,
+    month INTEGER NOT NULL,
+    scraped_at TEXT NOT NULL,
+    PRIMARY KEY (year, month)
 );
 """)
 

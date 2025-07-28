@@ -2,29 +2,39 @@
 
 import argparse
 import calendar
-import csv
+from dataclasses import dataclass
 from datetime import datetime, date
 import logging
 import os
 import re
-import sys
-import time
 
-from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
+from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.support.ui import Select
 
+from db_ops import get_connection, close_connection, update_case_opinion, insert_case_with_details 
 from driver_factory import create_driver
+
+# This program loops through the Washington State Court of Appeals Opinions Release page, which is shown
+# in the global variable opinions_url. That page seems to be limited to showing 200 results, so this
+# program structures searches on the month boundary. To date, I have never seen a month with more than
+# 170 opinion releases. 
+#
+# It is expected that the appellate court scheduling program has been run prior to running this program
+# and that all cases referred to in the opinion release pages have already been scraped from the schedules
+# pages and entered into the db. This program updates those db entries to include the opinion release date
+# and the opinion type (e.g. published, unpublished, or published in part)
+#
+# Initially the programs only allowed scraping data for 2024 and beyond. When I extended the functionality
+# to start scraping from the earliest date that WA COA supported, I found that some cases that show up on
+# the opinions release pages never appeared in the public scheduling pages. In this case, I insert as much
+# information into the db, reasoning that partial information is better than no information.
+#
+# Queries before 2013 are always empty, so we make the minimum date Jan 1, 2013.
 
 MIN_DATE = date(2013, 1, 1)
 
-results = []
 opinions_url = "https://www.courts.wa.gov/opinions/" 
-
-OUTPUT_DIR = "output"
-os.makedirs(OUTPUT_DIR, exist_ok=True)
-output_filename = os.path.join(OUTPUT_DIR, "opinions.tsv")
 
 # Create a logs directory
 LOG_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "logs")
@@ -43,13 +53,72 @@ logging.basicConfig(
     ]
 )
 
-def get_opinions_for_date_range(driver, begin_dt, end_dt):
-    global results
-    global opinions_url
+@dataclass(slots=True)
+class Opinion:
+    case_number: str
+    case_title: str
+    division: str
+    opinion_date: str
+    opinion_type: str
+
+def update_opinions_in_db(opinions: list[Opinion]) -> None:
+    logging.info(f"Updating opinions for {len(opinions)} cases")
+    exception_count = 0
+
+    conn = get_connection()
+
+    with conn:  # automatic transaction
+        for op in opinions:
+            try:
+                updated = update_case_opinion(conn, op.case_number, op.opinion_date, op.opinion_type)
+                if not updated:
+                    logging.warning(
+                        f"⚠️ No matching case found for opinion update: "
+                        f"{op.case_number} ({op.opinion_date}, {op.opinion_type}) "
+                        f"Attempting to insert as new case"
+                    )
+                    # I found some instances, espicially in cases over a decade ago, in which there are
+                    # cases in the opinions release pages for which we never found a consideration date. 
+                    # Example: 673688, division 1. A case with incomplete information is better than not 
+                    # having it at all, so insert it.
+                    insert_case_with_details(
+                        conn=conn,
+                        division=op.division,
+                        case_numbers=[(op.case_number,False)],
+                        case_title=op.case_title,
+                        panel_date="",
+                        oral_arguments=False,
+                        judges=[],
+                        litigants=[],
+                        attorneys=[],
+                        lower_court="",
+                        lower_court_case_number=""
+                    )
+            except Exception as e:
+                exception_count += 1
+                logging.error(
+                    f"❌ Error updating opinion for case {op.case_number} "
+                    f"({op.opinion_date}, {op.opinion_type}): {e}",
+                    exc_info=True
+                )
+                if exception_count > 5:
+                    logging.exception(
+                        "❌ More than 5 exceptions while updating opinions. Aborting."
+                    )
+                    raise  # triggers automatic rollback
+
+    close_connection(conn)
+
+def get_opinions_for_date_range(driver: WebDriver, begin_dt: str, end_dt: str) -> None:
+    results: list[Opinion] = []
 
     driver.get(opinions_url)
 
+    # The WA COA opinions release page require that you search based on start
+    # date and end date. I have found that entering a period of longer than a month
+    # may result in cases being missed, so the program searches on month blocks
     court_level = Select(driver.find_element(By.NAME, "courtLevel"))
+    # some day I'll add Supreme Court cases to the program, but just COA for now.
     court_level.select_by_visible_text("Court of Appeals Only")
 
     begin_date = driver.find_element(By.NAME, "beginDate")
@@ -62,8 +131,6 @@ def get_opinions_for_date_range(driver, begin_dt, end_dt):
     search_button.click()
 
     driver.implicitly_wait(1)
-
-    group_header = "Court of Appeals Opinions"
 
     # Sadly, there are no ids or other elements that make it easy to grab the information
     # desired. Must use XPATH.
@@ -104,13 +171,9 @@ def get_opinions_for_date_range(driver, begin_dt, end_dt):
                 division = cells[2].text
                 case_title = cells[3].text
 
-                #print(f"{filing_date} {division} {case_title}")
-
                 try:
-                    # Parse the date string (handles "Jan. 25, 2025" format)
+                    # Parse the date string (handles "Jan. 25, 2025" format) and convert to mm/dd/yyyy
                     parsed_date = datetime.strptime(filing_date, "%b. %d, %Y")
-                    
-                    # Convert to desired format mm/dd/yyyy
                     file_date = parsed_date.strftime("%m/%d/%Y")
                 except ValueError:
                     # Keep original date string if parsing fails
@@ -118,28 +181,34 @@ def get_opinions_for_date_range(driver, begin_dt, end_dt):
                     pass
                     
                 if opinion_type == "Opinions Published in Part":
-                    opinion_TLA = "PIP"
+                    opinion_type_text = "Published in Part"
                 elif opinion_type == "Published Opinions":
-                    opinion_TLA = "PUB"
+                    opinion_type_text = "Published"
                 elif opinion_type == "Unpublished Opinions":
-                    opinion_TLA = "UPUB"
+                    opinion_type_text = "Unpublished"
 
+                # just the digits, please
                 case_num = re.sub(r"\D", "", case_info.rstrip())
                 appellate_div = division.rstrip()
-                results.append(
-                        [
-                         file_date.rstrip(),
-                         case_num,
-                         appellate_div,
-                         opinion_TLA,
-                         f"{case_title.rstrip()}"
-                        ])
+                # Decimal, not Roman, thank you.
+                if appellate_div == "I":
+                    appellate_div = "1"
+                elif appellate_div == "II":
+                    appellate_div = "2"
+                elif appellate_div == "III":
+                    appellate_div = "3"
 
-def write_opinions_to_file(data, filepath):
-    data_sorted = sorted(data, key=lambda x: datetime.strptime(x[0], "%m/%d/%Y"))
-    with open(filepath, "w", newline='', encoding="utf-8") as f:
-        writer = csv.writer(f, delimiter='\t')
-        writer.writerows(data_sorted)
+                results.append(
+                    Opinion(
+                        case_number=case_num, 
+                        case_title=case_title,
+                        division=appellate_div,
+                        opinion_date=file_date, 
+                        opinion_type=opinion_type_text
+                    )
+                )
+
+    update_opinions_in_db(results)
 
 def generate_date_range_for_year(year: int) -> list[dict[str, str]]:
     """
@@ -170,7 +239,7 @@ def parse_year(arg_value: str) -> int:
             f"Invalid year format: '{arg_value}'. Enter year between 2012 and {this_year}."
         )
 
-def parse_args() -> str:
+def parse_args() -> int:
     parser = argparse.ArgumentParser(
         description="Scrape WA appellate opinion releases for a given year."
     )
@@ -184,9 +253,10 @@ def parse_args() -> str:
     args = parser.parse_args()
     return args.year
 
-def main():
-    global results
-
+def main() -> None:
+    # Only support scraping per year. It is assumed a full db is being built out. There are practical reasons
+    # for not allowing the user to auto scrape more than a year in one invocation, and practical reasons not
+    # to support less. It is my compromise. Works for me. Doubt anyone else will ever use this.
     year = parse_args()
     date_range = generate_date_range_for_year(year)
 
@@ -194,13 +264,12 @@ def main():
         driver = create_driver()
         
         # The opinions website is limited to 200 results. Thus, we query for
-        # one month at a time. Max I've seen for a month is around 120 results
+        # one month at a time. Max I've seen for a month is around 150 results
         # for date_range in opiniondates.date_groups:
         logging.info(f"Getting opinions for {year}...")
-        jan = date_range[0]
         # for month in date_range:
-        get_opinions_for_date_range(driver, jan['begin'], jan['end'])
-        write_opinions_to_file(results, output_filename)
+        for month in date_range:
+            get_opinions_for_date_range(driver, month['begin'], month['end'])
     except Exception as e:
         logging.exception(f"❌ Unhandled error: {e}")
     finally:
