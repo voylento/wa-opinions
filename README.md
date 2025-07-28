@@ -1,20 +1,23 @@
 
 # Washington State Appellate Court Case Tracker
 
-This is a tool that gathers information about appellate court cases in Washington State and compiles that information into html reports. 
+This is a tool that scrapes information about appellate court cases in Washington State and stores that data into a sqlite database. 
 
 ## Motivation
 I once saw a news article referring to an appellate court opinion. I looked up the opinion, read it, and found it interesting and started reading more appellate opinions. I have been surprised at the number of times I've been involved in discussions that touch on issues of law and how little I and other laymen understand about how law works. The more I read opinions, the more I realize how misinformed I and others often are about legal issues we read about, have friends or families impacted by, or face ourselves. Familiarity with appellate court opinions can disabuse us of a lot of the nonsense that clutters our minds about the law.  
 
-As I learned more about our court system in Washington, I became more curious about how long cases take to wind through the appellate court system. Tracking that information is tedious so I decided to write some scripts to help me pull it all together. This project does that for me. For now, this code creates html reports that track when cases are scheduled for consideration before an appellate panel, when opinions are released, and a few other pieces of information. The report also includes links to the public opinions. This is a work in progress.
+As I learned more about our court system in Washington, I became more curious about how long cases take to wind through the appellate court system and other aspects of appellate cases. Tracking that information across the various public websites is tedious so I decided to write some scripts to help me pull it all together. This project does that for me. For now, the code stores the data in a sqlite database. I use the open source datasette project to view the data.
+
 
 ## Quickstart
-Don't clone, don't install, don't build. I publish these reports weekly on my website. Go there to see the reports that get generated:
+There is no quickstart. To scrape data across thousands of pages and pull it all into structured format into an SQL database takes a number of steps. Many of the steps are automated, but not all. To scrape pages, store them in your private db, and view queries against the data, these are the steps required: 
 
-- [Cases with opinion](https://voylento.com/cases_decided.html)
-- [Cases awaiting opinion](https://voylento.com/cases_waiting.html)
-
-As of now, this only tracks Division 1. Other divisions, as well as additional information and capabilities, are on the, ahem, docket.
+1. Clone the project
+2. Install Chrome for Testing and the Selenium Chromedriver using the provided installer script.
+3. Install the required dependencies for Chrome for Testing and Selenium Chromedriver.
+4. Install the Python dependencies.
+5. Run the two scrapper scripts for date ranges. 
+6. Run datasette against the database to view and query the scrapped data.
 
 ## Supported Platforms
 ✅ macOS (arm64) — tested  
@@ -22,16 +25,24 @@ As of now, this only tracks Division 1. Other divisions, as well as additional i
 ✅ Windows via WSL 2 with an Ubuntu distribution — tested  
 ❌ Other platforms/architectures — not currently supported
 
-> **Note:** For Windows users, run this project inside WSL 2 with Ubuntu. The instructions below for Ubuntu apply.
+> [!NOTE]
+> For Windows users, run this project inside WSL 2 with Ubuntu. The instructions below for Ubuntu apply.
 
 ## Dependencies
 This project uses:
 - [Chrome for Testing](https://developer.chrome.com/docs/chrome-for-testing/) and the matching [Chromedriver](https://chromedriver.chromium.org/)
 - [Selenium](https://pypi.org/project/selenium/)
+- [SQLite](https://www.sqlite.org) (installed on most systems by default)
+- [Datasette](https://datasette.io) (installed as part of running `pip install r requirements.txt`)
 
 ## Setup
 
-### 1. Install Chrome for Testing and Chromedriver
+### 1. Clone the project
+```bash
+git clone git@github.com:voylento/wa-opinions.git
+```
+
+### 2. Install Chrome for Testing and Chromedriver
 Run the provided setup script, which will:
 - Detect your platform
 - Download the correct Chrome for Testing build
@@ -42,7 +53,7 @@ Run the provided setup script, which will:
 python3 setup_cft.py
 ```
 
-### 2. Install required system packages (Linux/Ubuntu only)
+### 3. Install required system packages (Linux/Ubuntu only)
 On a minimal Ubuntu/Debian system, install these libraries first:
 
 ```bash
@@ -56,32 +67,82 @@ sudo apt install -y curl unzip \
 
 These packages provide all the runtime libraries Chrome needs, even in headless mode.
 
-### 3. Install Python dependencies
+### 4. Install Python dependencies
 Create and activate a virtual environment, then install requirements:
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+pip install -r requirements-dev.txt
 ```
 
-## Run
-Use the provided `run` script to execute the full workflow:
+### 5. Run the scraper
+Running the scraper consists to step phases:
+
+- Scrape the case consideration schedules for each year from 2012 to current
+- Scrape the opinions release pages for each year 2013 to current
+
+I recommend doing each on a year by year basis to build out the database, and at 
+off-peak hours.
+
+#### Scrape the consideration schedule:
+
+> [!NOTE]
+> The public pages for consideration schedule do not go back beyond 2012
+
+From the project root:
+```bash
+./src/get_argument_dates.py --start 2012-01-01 --end 2012-12-31
+```
+
+Make iterative runs for each year up to the current year to fill out the database.
+
+The scraper will log progress, warnings, and errors to the terminal as well as to
+a log file under the log/ directory
+
+The scraper will create a database named cases.db in the directory data/
+
+#### Scrape the opinions schedule:
+
+> [!NOTE]
+> The public opinion release pages do not go back beyond 2013 (well, one case is shown for 2012)
+
+```base
+./src/get_opinions.py --year 2013
+./src/get/opinions.py --year 2014
+```
+etc.
+
+### Run datasette on the database that was created
 
 ```bash
-./run
+datasette data/cases.db -m data/metadata.json
 ```
 
-This runs a series of Python scripts and coreutils to:
-- Download current case data
-- Process and merge the data
-- Generate the reports: `cases_decided.html` and `cases_waiting.html`
+> [!NOTE]
+> metadata.json contains 3 useful queries that get embedded into the datasette
 
-## Running individual parts
-To run isolated parts of the process, inspect the `run` shell script. It shows how the various Python scripts are stitched together.
+Open a browser to http://localhost:127.0.0.1:8001 to explore the data in the browser
+
+To connect to the database with the sqlite CLI:
+
+```bash
+sqlite3 data/cases.db
+```
+
+There are some sample SQL queries in [docs/sample_sql.md](docs/sample_sql.md)
+
+## Future work
+- The public websites being scraped do not have the panel dates for all cases. There are some additional ways to
+scrape that data I plan to add.
+- Links to a subset of data for older opinions is accessible through other url probing. 
+- Add support to notate cases that were disposed of after consideration but before opinion release
+- Add datasette-render-html support for the opinion links in the query results
+- Add support for tagging cases
 
 ## Contributing
-I'm not taking contributions at this time as there are a number of core design and capability changes I intend to make.
+Fork the repro and submit pull requests. Talk to me first.
 
 ## License
 MIT License.
