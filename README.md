@@ -78,7 +78,7 @@ pip install -r requirements-dev.txt
 ```
 
 ### 5. Run the scraper
-Running the scraper consists to step phases:
+Running the scraper consists of two phases:
 
 - Scrape the case consideration schedules for each year from 2012 to current
 - Scrape the opinions release pages for each year 2013 to current
@@ -93,6 +93,7 @@ off-peak hours.
 
 From the project root:
 ```bash
+source venv/bin/activate
 ./src/get_argument_dates.py --start 2012-01-01 --end 2012-12-31
 ```
 
@@ -108,7 +109,8 @@ The scraper will create a database named cases.db in the directory data/
 > [!NOTE]
 > The public opinion release pages do not go back beyond 2013 (well, one case is shown for 2012)
 
-```base
+```bash
+source venv/bin/activate
 ./src/get_opinions.py --year 2013
 ./src/get/opinions.py --year 2014
 ```
