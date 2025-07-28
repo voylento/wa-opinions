@@ -121,8 +121,6 @@ etc.
 ```bash
 datasette data/cases.db -m data/metadata.json
 ```
-Example View:
-![Example View](assets/datasette-snip.jpg)
 
 > [!NOTE]
 > metadata.json contains 3 useful queries that get embedded into the datasette
