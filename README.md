@@ -1,18 +1,20 @@
 
-# WA‑Opinions
+# Washington State Appellate Court Case Tracker
 
-Tool to gather information on appellate cases before the Washington State Court of Appeals, Division 1.
+This is a tool that gathers information about appellate court cases in Washington State and compiles that information into html reports. 
 
 ## Motivation
-I became interested in following appellate court cases in Washington. In particular, I enjoy reading the opinions that get released. Beyond that, I wanted to see how long it takes the appellate court to process cases between the time an appellate court panel considers a case and the time they release an opinion. Pulling that information together manually is tedious, so I wrote Python scripts to do it for me.
+I once saw a news article referring to an appellate court opinion. I looked up the opinion, read it, and found it interesting and started reading more appellate opinions. I have been surprised at the number of times I've been involved in discussions that touch on issues of law and how little I and other laymen understand about how law works. The more I read opinions, the more I realize how misinformed I and others often are about legal issues we read about, have friends or families impacted by, or face ourselves. Familiarity with appellate court opinions can disabuse us of a lot of the nonsense that clutters our minds about the law.  
 
-These scripts generate:
-- **cases_decided.html** – cases with released opinions
-- **cases_waiting.html** – cases still awaiting an opinion
+As I learned more about our court system in Washington, I became more curious about how long cases take to wind through the appellate court system. Tracking that information is tedious so I decided to write some scripts to help me pull it all together. This project does that for me. For now, this code creates html reports that track when cases are scheduled for consideration before an appellate panel, when opinions are released, and a few other pieces of information. The report also includes links to the public opinions. This is a work in progress.
 
-I run this weekly, and the results are uploaded to:
-- [Voylento.com — cases_decided.html](https://voylento.com/cases_decided.html)
-- [Voylento.com — cases_waiting.html](https://voylento.com/cases_waiting.html)
+## Quickstart
+Don't clone, don't install, don't build. I publish these reports weekly on my website. Go there to see the reports that get generated:
+
+- [Cases with opinion](https://voylento.com/cases_decided.html)
+- [Cases awaiting opinion](https://voylento.com/cases_waiting.html)
+
+As of now, this only tracks Division 1. Other divisions, as well as additional information and capabilities, are on the, ahem, docket.
 
 ## Supported Platforms
 ✅ macOS (arm64) — tested  
@@ -79,7 +81,7 @@ This runs a series of Python scripts and coreutils to:
 To run isolated parts of the process, inspect the `run` shell script. It shows how the various Python scripts are stitched together.
 
 ## Contributing
-Pull requests are welcome. If you’d like to help add support for other platforms or features, feel free to open an issue or fork the project.
+I'm not taking contributions at this time as there are a number of core design and capability changes I intend to make.
 
 ## License
 MIT License.
