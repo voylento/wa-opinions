@@ -16,8 +16,8 @@ There is no quickstart. To scrape data across thousands of pages and pull it all
 2. Install Chrome for Testing and the Selenium Chromedriver using the provided installer script.
 3. Install the required dependencies for Chrome for Testing and Selenium Chromedriver.
 4. Install the Python dependencies.
-5. Run the two scrapper scripts for date ranges. 
-6. Run datasette against the database to view and query the scrapped data.
+5. Run the two scraper scripts for date ranges. 
+6. Run datasette against the database to view and query the scraped data.
 
 ## Supported Platforms
 ✅ macOS (arm64) — tested  
