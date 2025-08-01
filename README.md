@@ -127,7 +127,7 @@ Example View:
 > [!NOTE]
 > metadata.json contains 3 useful queries that get embedded into the datasette
 
-Open a browser to http://localhost:127.0.0.1:8001 to explore the data in the browser
+Open a browser to http://127.0.0.1:8001 to explore the data in the browser
 
 To connect to the database with the sqlite CLI:
 
